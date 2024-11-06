@@ -1,9 +1,11 @@
 import BannerOne from "@/components/BannerOne";
 import BestSellsOne from "@/components/BestSellsOne";
+import BottomFooter from "@/components/BottomFooter";
 import BrandOne from "@/components/BrandOne";
 import DeliveryOne from "@/components/DeliveryOne";
 import FeatureOne from "@/components/FeatureOne";
 import FlashSalesOne from "@/components/FlashSalesOne";
+import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
 import HotDealsOne from "@/components/HotDealsOne";
 import NewArrivalOne from "@/components/NewArrivalOne";
@@ -93,10 +95,10 @@ const page = () => {
       <NewsletterOne />
 
       {/* FooterOne */}
-      {/* <FooterOne /> */}
+      <FooterOne />
 
       {/* BottomFooter */}
-      {/* <BottomFooter /> */}
+      <BottomFooter />
     </>
   );
 };
