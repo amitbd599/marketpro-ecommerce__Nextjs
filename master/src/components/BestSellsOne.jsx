@@ -4,11 +4,21 @@ import Link from "next/link";
 import { getCountdown } from "../helper/Countdown";
 
 const BestSellsOne = () => {
-  const [timeLeft, setTimeLeft] = useState(getCountdown());
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const loadCountdown = async () => {
+      const { getCountdown } = await import("../helper/Countdown");
       setTimeLeft(getCountdown());
+    };
+    loadCountdown();
+    const interval = setInterval(() => {
+      loadCountdown();
     }, 1000);
 
     return () => clearInterval(interval);

@@ -1,10 +1,12 @@
 import BannerOne from "@/components/BannerOne";
 import BestSellsOne from "@/components/BestSellsOne";
+import BrandOne from "@/components/BrandOne";
 import DeliveryOne from "@/components/DeliveryOne";
 import FeatureOne from "@/components/FeatureOne";
 import FlashSalesOne from "@/components/FlashSalesOne";
 import HeaderOne from "@/components/HeaderOne";
 import HotDealsOne from "@/components/HotDealsOne";
+import NewArrivalOne from "@/components/NewArrivalOne";
 import OfferOne from "@/components/OfferOne";
 import OrganicOne from "@/components/OrganicOne";
 import ProductListOne from "@/components/ProductListOne";
@@ -77,10 +79,10 @@ const page = () => {
       <ShortProductOne />
 
       {/* BrandOne */}
-      {/* <BrandOne /> */}
+      <BrandOne />
 
       {/* NewArrivalOne */}
-      {/* <NewArrivalOne /> */}
+      <NewArrivalOne />
 
       {/* ShippingOne */}
       {/* <ShippingOne /> */}
