@@ -1,5 +1,4 @@
-
-
+"use client";
 // Countdown Timer Function
 function countdown(targetDate) {
   const now = new Date().getTime(); // Get current time in milliseconds

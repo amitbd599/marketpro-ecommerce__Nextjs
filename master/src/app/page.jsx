@@ -1,5 +1,6 @@
 import BannerOne from "@/components/BannerOne";
 import FeatureOne from "@/components/FeatureOne";
+import FlashSalesOne from "@/components/FlashSalesOne";
 import HeaderOne from "@/components/HeaderOne";
 import PromotionalOne from "@/components/PromotionalOne";
 import ColorInit from "@/helper/ColorInit";
@@ -37,7 +38,7 @@ const page = () => {
       <PromotionalOne />
 
       {/* FlashSalesOne */}
-      {/* <FlashSalesOne /> */}
+      <FlashSalesOne />
 
       {/* ProductListOne */}
       {/* <ProductListOne /> */}
