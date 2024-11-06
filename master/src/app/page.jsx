@@ -1,4 +1,5 @@
 import BannerOne from "@/components/BannerOne";
+import BestSellsOne from "@/components/BestSellsOne";
 import FeatureOne from "@/components/FeatureOne";
 import FlashSalesOne from "@/components/FlashSalesOne";
 import HeaderOne from "@/components/HeaderOne";
@@ -61,7 +62,7 @@ const page = () => {
       <TopVendorsOne />
 
       {/* BestSellsOne */}
-      {/* <BestSellsOne /> */}
+      <BestSellsOne />
 
       {/* DeliveryOne */}
       {/* <DeliveryOne /> */}
