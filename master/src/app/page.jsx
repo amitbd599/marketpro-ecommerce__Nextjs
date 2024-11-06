@@ -7,11 +7,13 @@ import FlashSalesOne from "@/components/FlashSalesOne";
 import HeaderOne from "@/components/HeaderOne";
 import HotDealsOne from "@/components/HotDealsOne";
 import NewArrivalOne from "@/components/NewArrivalOne";
+import NewsletterOne from "@/components/NewsletterOne";
 import OfferOne from "@/components/OfferOne";
 import OrganicOne from "@/components/OrganicOne";
 import ProductListOne from "@/components/ProductListOne";
 import PromotionalOne from "@/components/PromotionalOne";
 import RecommendedOne from "@/components/RecommendedOne";
+import ShippingOne from "@/components/ShippingOne";
 import ShortProductOne from "@/components/ShortProductOne";
 import TopVendorsOne from "@/components/TopVendorsOne";
 import ColorInit from "@/helper/ColorInit";
@@ -85,10 +87,10 @@ const page = () => {
       <NewArrivalOne />
 
       {/* ShippingOne */}
-      {/* <ShippingOne /> */}
+      <ShippingOne />
 
       {/* NewsletterOne */}
-      {/* <NewsletterOne /> */}
+      <NewsletterOne />
 
       {/* FooterOne */}
       {/* <FooterOne /> */}
