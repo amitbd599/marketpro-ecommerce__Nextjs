@@ -1,7 +1,6 @@
 "use client";
 import React, { memo, useEffect, useState } from "react";
 import Link from "next/link";
-// import Slider from "react-slick";
 import { getCountdown } from "../helper/Countdown";
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });

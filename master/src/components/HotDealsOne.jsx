@@ -1,9 +1,8 @@
 "use client";
 import React, { memo, useEffect, useState } from "react";
-import Link from "next/link";
-
-import { getCountdown } from "../helper/Countdown";
 import dynamic from "next/dynamic";
+import Link from "next/link";
+import { getCountdown } from "../helper/Countdown";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const SampleNextArrow = memo((props) => {
@@ -130,7 +129,6 @@ const HotDealsOne = () => {
                 <Link
                   href='/shop'
                   className='mt-16 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8'
-                  tabIndex={0}
                 >
                   Shop Now
                   <span className='icon text-xl d-flex'>

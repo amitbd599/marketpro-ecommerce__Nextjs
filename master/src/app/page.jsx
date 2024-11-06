@@ -1,13 +1,16 @@
 import BannerOne from "@/components/BannerOne";
 import BestSellsOne from "@/components/BestSellsOne";
+import DeliveryOne from "@/components/DeliveryOne";
 import FeatureOne from "@/components/FeatureOne";
 import FlashSalesOne from "@/components/FlashSalesOne";
 import HeaderOne from "@/components/HeaderOne";
 import HotDealsOne from "@/components/HotDealsOne";
 import OfferOne from "@/components/OfferOne";
+import OrganicOne from "@/components/OrganicOne";
 import ProductListOne from "@/components/ProductListOne";
 import PromotionalOne from "@/components/PromotionalOne";
 import RecommendedOne from "@/components/RecommendedOne";
+import ShortProductOne from "@/components/ShortProductOne";
 import TopVendorsOne from "@/components/TopVendorsOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -65,13 +68,13 @@ const page = () => {
       <BestSellsOne />
 
       {/* DeliveryOne */}
-      {/* <DeliveryOne /> */}
+      <DeliveryOne />
 
       {/* OrganicOne */}
-      {/* <OrganicOne /> */}
+      <OrganicOne />
 
       {/* ShortProductOne */}
-      {/* <ShortProductOne /> */}
+      <ShortProductOne />
 
       {/* BrandOne */}
       {/* <BrandOne /> */}
