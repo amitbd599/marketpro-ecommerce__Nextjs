@@ -796,3 +796,7 @@
     }
   }
 }
+
+.slick-arrow:active {
+  transform: translate(0, -50%);
+}
