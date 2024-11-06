@@ -1,12 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import query from "jquery";
 import Link from "next/link";
-import $ from "jquery";
-import "select2";
-
-
+import { usePathname } from "next/navigation";
+import "select2/dist/css/select2.min.css";
+import query from "jquery";
 const HeaderOne = () => {
+  let pathname = usePathname();
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -18,7 +17,7 @@ const HeaderOne = () => {
       window.addEventListener("scroll", handleScroll);
 
       // Initialize Select2
-      const selectElement = $(".js-example-basic-single");
+      const selectElement = query(".js-example-basic-single");
       selectElement.select2();
 
       // Cleanup function
@@ -1211,11 +1210,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/" && "activePage"
+                          } `}
                         >
                           Home Grocery
                         </Link>
@@ -1223,11 +1221,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/index-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/index-two" && "activePage"
+                          } `}
                         >
                           {" "}
                           Home Electronics
@@ -1236,11 +1233,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/index-three'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/index-three" && "activePage"
+                          } `}
                         >
                           Home Fashion
                         </Link>
@@ -1255,11 +1251,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/shop'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/shop" && "activePage"
+                          } `}
                         >
                           {" "}
                           Shop
@@ -1268,11 +1263,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/product-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/product-details" && "activePage"
+                          } `}
                         >
                           {" "}
                           Shop Details
@@ -1281,11 +1275,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/product-details-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/product-details-two" && "activePage"
+                          } `}
                         >
                           {" "}
                           Shop Details Two
@@ -1304,11 +1297,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/cart'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/cart" && "activePage"
+                          } `}
                         >
                           {" "}
                           Cart
@@ -1317,11 +1309,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/wishlist'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/wishlist" && "activePage"
+                          } `}
                         >
                           Wishlist
                         </Link>
@@ -1329,11 +1320,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/checkout'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/checkout" && "activePage"
+                          } `}
                         >
                           {" "}
                           Checkout{" "}
@@ -1343,11 +1333,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/become-seller'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/become-seller" && "activePage"
+                          } `}
                         >
                           Become Seller
                         </Link>
@@ -1355,11 +1344,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/account'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/account" && "activePage"
+                          } `}
                         >
                           {" "}
                           Account
@@ -1378,11 +1366,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/vendor'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/vendor" && "activePage"
+                          } `}
                         >
                           Vendors
                         </Link>
@@ -1390,11 +1377,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/vendor-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/vendor-details" && "activePage"
+                          } `}
                         >
                           Vendor Details
                         </Link>
@@ -1402,11 +1388,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/vendor-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/vendor-two" && "activePage"
+                          } `}
                         >
                           Vendors Two
                         </Link>
@@ -1415,11 +1400,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/vendor-two-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/vendor-two-details" && "activePage"
+                          } `}
                         >
                           Vendors Two Details
                         </Link>
@@ -1434,11 +1418,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/blog'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/blog" && "activePage"
+                          } `}
                         >
                           {" "}
                           Blog
@@ -1447,11 +1430,10 @@ const HeaderOne = () => {
                       <li className='common-dropdown__item nav-submenu__item'>
                         <Link
                           href='/blog-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
+                          scroll={false}
+                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
+                            pathname == "/blog-details" && "activePage"
+                          } `}
                         >
                           {" "}
                           Blog Details
@@ -1462,11 +1444,10 @@ const HeaderOne = () => {
                   <li className='nav-menu__item'>
                     <Link
                       href='/contact'
-                      className={(navData) =>
-                        navData.isActive
-                          ? "nav-menu__link activePage"
-                          : "nav-menu__link"
-                      }
+                      scroll={false}
+                      className={`nav-menu__link ${
+                        pathname == "/contact" && "activePage"
+                      } `}
                     >
                       Contact Us
                     </Link>

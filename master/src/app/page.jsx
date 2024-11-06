@@ -1,3 +1,5 @@
+import BannerOne from "@/components/BannerOne";
+import FeatureOne from "@/components/FeatureOne";
 import HeaderOne from "@/components/HeaderOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -25,10 +27,10 @@ const page = () => {
       <HeaderOne />
 
       {/* BannerOne */}
-      {/* <BannerOne /> */}
+      <BannerOne />
 
       {/* FeatureOne */}
-      {/* <FeatureOne /> */}
+      <FeatureOne />
 
       {/* PromotionalOne */}
       {/* <PromotionalOne /> */}

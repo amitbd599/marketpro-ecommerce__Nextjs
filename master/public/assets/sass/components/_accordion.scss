@@ -1,4 +1,4 @@
-/* =========================== Accordion Css start ============================= */ 
+/* =========================== Accordion Css start ============================= */
 .common-accordion {
     .accordion-item {
         border: 1px solid var(--border-color);
@@ -14,7 +14,7 @@
     }
     .accordion-body {
         padding: 20px 30px;
-        
+
         padding-block-start: 0;
         @include msm-screen {
             padding: 12px 20px;
@@ -22,16 +22,16 @@
         }
     }
     &:first-of-type .accordion-button.collapsed {
-        border-radius: 5px;  
+        border-radius: 5px;
     }
     &:last-of-type .accordion-button.collapsed {
-        border-radius: 5px;  
+        border-radius: 5px;
     }
     .accordion-button{
         color: var(--heading-color);
-         
+
         padding: 20px 30px;
-        padding-inline-end: 46px; 
+        padding-inline-end: 46px;
         font-weight: 600;
         font-size: clampCal(16, 20);
         font-family: var(--heading-font);
@@ -51,7 +51,7 @@
             color: hsl(var(--main));
             &::after {
                 background-image: none;
-                color: hsl(var(--main)); ; 
+                color: hsl(var(--main)); ;
             }
         }
         &[aria-expanded="true"], &[aria-expanded="false"] {
@@ -66,7 +66,7 @@
                 transform: translateY(-50%);
                 inset-inline-end: 30px;
                 height: unset;
-                 
+
                 text-align: center;
                 @include msm-screen {
                     inset-inline-end: 20px;
