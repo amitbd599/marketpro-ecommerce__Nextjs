@@ -5,6 +5,7 @@ import HeaderOne from "@/components/HeaderOne";
 import OfferOne from "@/components/OfferOne";
 import ProductListOne from "@/components/ProductListOne";
 import PromotionalOne from "@/components/PromotionalOne";
+import RecommendedOne from "@/components/RecommendedOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -49,7 +50,7 @@ const page = () => {
       <OfferOne />
 
       {/* RecommendedOne */}
-      {/* <RecommendedOne /> */}
+      <RecommendedOne />
 
       {/* HotDealsOne */}
       {/* <HotDealsOne /> */}
