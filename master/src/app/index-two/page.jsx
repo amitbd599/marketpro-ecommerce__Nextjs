@@ -1,4 +1,5 @@
 import BannerTwo from "@/components/BannerTwo";
+import BigDealOne from "@/components/BigDealOne";
 import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
 import FeaturedOne from "@/components/FeaturedOne";
@@ -51,6 +52,9 @@ const page = () => {
 
       {/* FeaturedOne */}
       <FeaturedOne />
+
+      {/* BigDealOne */}
+      <BigDealOne />
     </>
   );
 };
