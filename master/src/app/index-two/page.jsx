@@ -8,6 +8,7 @@ import HeaderTwo from "@/components/HeaderTwo";
 import PopularProductsOne from "@/components/PopularProductsOne";
 import PromotionalTwo from "@/components/PromotionalTwo";
 import RecentlyViewedOne from "@/components/RecentlyViewedOne";
+import ShippingTwo from "@/components/ShippingTwo";
 import TopSellingOne from "@/components/TopSellingOne";
 import TopSellingTwo from "@/components/TopSellingTwo";
 import TopVendorsTwo from "@/components/TopVendorsTwo";
@@ -75,6 +76,9 @@ const page = () => {
 
       {/* RecentlyViewedOne */}
       <RecentlyViewedOne />
+
+      {/* ShippingTwo */}
+      <ShippingTwo />
     </>
   );
 };
