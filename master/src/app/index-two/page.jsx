@@ -4,8 +4,10 @@ import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
 import FeaturedOne from "@/components/FeaturedOne";
 import HeaderTwo from "@/components/HeaderTwo";
+import PopularProductsOne from "@/components/PopularProductsOne";
 import PromotionalTwo from "@/components/PromotionalTwo";
 import TopSellingOne from "@/components/TopSellingOne";
+import TopSellingTwo from "@/components/TopSellingTwo";
 import TrendingOne from "@/components/TrendingOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -55,6 +57,12 @@ const page = () => {
 
       {/* BigDealOne */}
       <BigDealOne />
+
+      {/* TopSellingTwo */}
+      <TopSellingTwo />
+
+      {/* PopularProductsOne */}
+      <PopularProductsOne />
     </>
   );
 };
