@@ -3,7 +3,6 @@
 import React, { memo, useEffect, useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
-import { getCountdown } from "../helper/Countdown";
 
 const SampleNextArrow = memo(function SampleNextArrow(props) {
   const { className, onClick } = props;
