@@ -5,6 +5,7 @@ import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
 import FeaturedOne from "@/components/FeaturedOne";
 import HeaderTwo from "@/components/HeaderTwo";
+import NewsletterTwo from "@/components/NewsletterTwo";
 import PopularProductsOne from "@/components/PopularProductsOne";
 import PromotionalTwo from "@/components/PromotionalTwo";
 import RecentlyViewedOne from "@/components/RecentlyViewedOne";
@@ -79,6 +80,9 @@ const page = () => {
 
       {/* ShippingTwo */}
       <ShippingTwo />
+
+      {/* NewsletterTwo */}
+      <NewsletterTwo />
     </>
   );
 };
