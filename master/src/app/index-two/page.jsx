@@ -4,6 +4,7 @@ import DaySaleOne from "@/components/DaySaleOne";
 import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
 import FeaturedOne from "@/components/FeaturedOne";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import NewsletterTwo from "@/components/NewsletterTwo";
 import PopularProductsOne from "@/components/PopularProductsOne";
@@ -83,6 +84,9 @@ const page = () => {
 
       {/* NewsletterTwo */}
       <NewsletterTwo />
+
+      {/* FooterTwo */}
+      <FooterTwo />
     </>
   );
 };
