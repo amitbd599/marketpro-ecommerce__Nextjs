@@ -1,5 +1,7 @@
 import BannerTwo from "@/components/BannerTwo";
 import DealsOne from "@/components/DealsOne";
+import DiscountOne from "@/components/DiscountOne";
+import FeaturedOne from "@/components/FeaturedOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import PromotionalTwo from "@/components/PromotionalTwo";
 import TopSellingOne from "@/components/TopSellingOne";
@@ -43,6 +45,12 @@ const page = () => {
 
       {/* TrendingOne */}
       <TrendingOne />
+
+      {/* DiscountOne */}
+      <DiscountOne />
+
+      {/* FeaturedOne */}
+      <FeaturedOne />
     </>
   );
 };
