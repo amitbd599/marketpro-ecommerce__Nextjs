@@ -3,6 +3,7 @@ import DealsOne from "@/components/DealsOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import PromotionalTwo from "@/components/PromotionalTwo";
 import TopSellingOne from "@/components/TopSellingOne";
+import TrendingOne from "@/components/TrendingOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -39,6 +40,9 @@ const page = () => {
 
       {/* TopSellingOne */}
       <TopSellingOne />
+
+      {/* TrendingOne */}
+      <TrendingOne />
     </>
   );
 };
