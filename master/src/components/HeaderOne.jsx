@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "select2/dist/css/select2.min.css";
+
 import query from "jquery";
 const HeaderOne = () => {
   let pathname = usePathname();

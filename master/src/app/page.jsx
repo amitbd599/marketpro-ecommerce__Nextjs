@@ -23,9 +23,9 @@ import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
 
 export const metadata = {
-  title: "Digital Market Place NEXT Js Template",
+  title: "MarketPro - E-commerce Next JS Template",
   description:
-    "DpMarket – Digital Products Marketplace NEXT JS Template – A versatile and meticulously designed set of templates crafted to elevate your Digital Products Marketplace content and experiences.",
+    "MarketPro is a comprehensive and versatile Next JS template designed for e-commerce platforms, specifically tailored for multi vendor marketplaces. With its modern design and extensive feature set, MarketPro provides everything you need to create a robust and user-friendly online marketplace..",
 };
 
 const page = () => {
