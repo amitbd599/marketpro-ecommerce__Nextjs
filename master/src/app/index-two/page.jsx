@@ -1,5 +1,6 @@
 import BannerTwo from "@/components/BannerTwo";
 import BigDealOne from "@/components/BigDealOne";
+import BottomFooter from "@/components/BottomFooter";
 import DaySaleOne from "@/components/DaySaleOne";
 import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
@@ -87,6 +88,9 @@ const page = () => {
 
       {/* FooterTwo */}
       <FooterTwo />
+
+      {/* BottomFooter */}
+      <BottomFooter />
     </>
   );
 };
