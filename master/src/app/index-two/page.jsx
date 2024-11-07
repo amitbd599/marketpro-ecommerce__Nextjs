@@ -1,13 +1,16 @@
 import BannerTwo from "@/components/BannerTwo";
 import BigDealOne from "@/components/BigDealOne";
+import DaySaleOne from "@/components/DaySaleOne";
 import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
 import FeaturedOne from "@/components/FeaturedOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import PopularProductsOne from "@/components/PopularProductsOne";
 import PromotionalTwo from "@/components/PromotionalTwo";
+import RecentlyViewedOne from "@/components/RecentlyViewedOne";
 import TopSellingOne from "@/components/TopSellingOne";
 import TopSellingTwo from "@/components/TopSellingTwo";
+import TopVendorsTwo from "@/components/TopVendorsTwo";
 import TrendingOne from "@/components/TrendingOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -63,6 +66,15 @@ const page = () => {
 
       {/* PopularProductsOne */}
       <PopularProductsOne />
+
+      {/* TopVendorsTwo */}
+      <TopVendorsTwo />
+
+      {/* DaySaleOne */}
+      <DaySaleOne />
+
+      {/* RecentlyViewedOne */}
+      <RecentlyViewedOne />
     </>
   );
 };
