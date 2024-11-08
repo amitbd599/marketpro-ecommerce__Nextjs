@@ -4,6 +4,7 @@ import DiscountThree from "@/components/DiscountThree";
 import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import NewArrivalThree from "@/components/NewArrivalThree";
+import PopularProductsThree from "@/components/PopularProductsThree";
 import PromotionalThree from "@/components/PromotionalThree";
 import TextSlider from "@/components/TextSlider";
 import TrendingThree from "@/components/TrendingThree";
@@ -55,6 +56,9 @@ const page = () => {
 
       {/* DealsSection */}
       <DealsSection />
+
+      {/* PopularProductsThree */}
+      <PopularProductsThree />
     </>
   );
 };
