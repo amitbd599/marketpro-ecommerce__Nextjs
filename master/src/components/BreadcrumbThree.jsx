@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const BreadcrumbThree = ({ title }) => {
   return (
@@ -10,7 +10,7 @@ const BreadcrumbThree = ({ title }) => {
           <ul className='flex-align gap-8 flex-wrap'>
             <li className='text-sm'>
               <Link
-                to='/index'
+                href='/index'
                 className='text-gray-900 flex-align gap-8 hover-text-main-600'
               >
                 <i className='ph ph-house' />

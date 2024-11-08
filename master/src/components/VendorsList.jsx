@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const VendorsList = () => {
   return (
@@ -28,7 +28,10 @@ const VendorsList = () => {
             </form>
             <div className='flex-align gap-8'>
               <span className='text-gray-900 flex-shrink-0'>Sort by:</span>
-              <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium' defaultValue={1}>
+              <select
+                className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'
+                defaultValue={1}
+              >
                 <option value={1}>Latest</option>
                 <option value={1}>Old</option>
               </select>
@@ -45,7 +48,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Organic Market
                   </Link>
                 </h6>
@@ -53,7 +56,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -78,7 +81,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -87,7 +90,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Safeway
                   </Link>
                 </h6>
@@ -95,7 +98,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -120,7 +123,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -129,7 +132,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Food Max
                   </Link>
                 </h6>
@@ -137,7 +140,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -162,7 +165,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -171,7 +174,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     HRmart
                   </Link>
                 </h6>
@@ -179,7 +182,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -213,7 +216,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Lucky Supermarket
                   </Link>
                 </h6>
@@ -221,7 +224,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -246,7 +249,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -255,7 +258,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Arico Farmer
                   </Link>
                 </h6>
@@ -263,7 +266,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -288,7 +291,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -297,7 +300,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Farmer Market
                   </Link>
                 </h6>
@@ -305,7 +308,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -330,7 +333,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -339,7 +342,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Foodsco
                   </Link>
                 </h6>
@@ -347,7 +350,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -381,7 +384,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Organic Market
                   </Link>
                 </h6>
@@ -389,7 +392,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -414,7 +417,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -423,7 +426,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Safeway
                   </Link>
                 </h6>
@@ -431,7 +434,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -456,7 +459,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -465,7 +468,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     Food Max
                   </Link>
                 </h6>
@@ -473,7 +476,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -498,7 +501,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-3 col-lg-4 col-sm-6' >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -507,7 +510,7 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <Link to='/vendor-details' className=''>
+                  <Link href='/vendor-details' className=''>
                     HRmart
                   </Link>
                 </h6>
@@ -515,7 +518,7 @@ const VendorsList = () => {
                   Delivery by 6:15am
                 </span>
                 <Link
-                  to='/shop'
+                  href='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
@@ -545,7 +548,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               <i className='ph-bold ph-arrow-left' />
             </Link>
@@ -553,7 +556,7 @@ const VendorsList = () => {
           <li className='page-item active'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               01
             </Link>
@@ -561,7 +564,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               02
             </Link>
@@ -569,7 +572,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               03
             </Link>
@@ -577,7 +580,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               04
             </Link>
@@ -585,7 +588,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               05
             </Link>
@@ -593,7 +596,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               06
             </Link>
@@ -601,7 +604,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               07
             </Link>
@@ -609,7 +612,7 @@ const VendorsList = () => {
           <li className='page-item'>
             <Link
               className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              to='#'
+              href='#'
             >
               <i className='ph-bold ph-arrow-right' />
             </Link>
