@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BreadcrumbImage from "@/components/BreadcrumbImage";
 import CounterSection from "@/components/CounterSection";
 import HeaderTwo from "@/components/HeaderTwo";
+import ShippingOne from "@/components/ShippingOne";
 import StepsSection from "@/components/StepsSection";
 import TestimonialOne from "@/components/TestimonialOne";
 import WhyBecomeSeller from "@/components/WhyBecomeSeller";
@@ -49,6 +50,9 @@ const page = () => {
       <section className='pb-120'>
         <TestimonialOne />
       </section>
+
+      {/* ShippingOne */}
+      <ShippingOne />
     </>
   );
 };
