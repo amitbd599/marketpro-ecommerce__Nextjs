@@ -27,7 +27,7 @@ const BreadcrumbImage = () => {
             More than half the units sold in our stores from independent
             sellers.
           </p>
-          <Link to='/account' className='btn btn-main-two rounded-8'>
+          <Link href='/account' className='btn btn-main-two rounded-8'>
             Create An Account
           </Link>
         </div>
