@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BreadcrumbImage from "@/components/BreadcrumbImage";
 import CounterSection from "@/components/CounterSection";
 import HeaderTwo from "@/components/HeaderTwo";
+import StepsSection from "@/components/StepsSection";
 import WhyBecomeSeller from "@/components/WhyBecomeSeller";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -39,6 +40,9 @@ const page = () => {
 
       {/* CounterSection */}
       <CounterSection />
+
+      {/* StepsSection */}
+      <StepsSection />
     </>
   );
 };
