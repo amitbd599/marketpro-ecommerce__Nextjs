@@ -1,5 +1,4 @@
-
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 
 const Preloader = () => {
@@ -7,17 +6,18 @@ const Preloader = () => {
   useEffect(() => {
     setTimeout(function () {
       setActive(false);
-    }, 500);
+    }, 1000);
   }, []);
 
   return (
     <>
       {active ? (
-        <div className="preloader">
-          <img src="assets/images/icon/preloader.gif" alt="" />
+        <div className='preloader'>
+          <img src='assets/images/icon/preloader.gif' alt='' />
         </div>
-
-      ) : (<div></div>)}
+      ) : (
+        <div></div>
+      )}
     </>
   );
 };

@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const VendorTwo = () => {
   let [grid, setGrid] = useState(false);
@@ -81,7 +83,7 @@ const VendorTwo = () => {
                   <ul className='max-h-540 overflow-y-auto scroll-sm'>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Mobile &amp; Accessories (12)
@@ -89,7 +91,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Laptop (12)
@@ -97,7 +99,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Electronics (12)
@@ -105,7 +107,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Watch (12)
@@ -113,7 +115,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Storage (12)
@@ -121,7 +123,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Portable Devices (12)
@@ -129,7 +131,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Action Camera (12)
@@ -137,7 +139,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Gadget (12)
@@ -145,7 +147,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor (12)
@@ -153,7 +155,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart TV (12)
@@ -161,7 +163,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Camera (12)
@@ -169,7 +171,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-24'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor Stand (12)
@@ -177,7 +179,7 @@ const VendorTwo = () => {
                     </li>
                     <li className='mb-0'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Headphone (12)
@@ -505,7 +507,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           e-Mart Shop
                         </Link>
                       </h6>
@@ -571,7 +573,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -608,7 +610,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           Baishakhi
                         </Link>
                       </h6>
@@ -674,7 +676,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -711,7 +713,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           e-zone Shop
                         </Link>
                       </h6>
@@ -777,7 +779,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -814,7 +816,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           Cloth &amp; Fashion Shop
                         </Link>
                       </h6>
@@ -880,7 +882,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -917,7 +919,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           New Market Shop
                         </Link>
                       </h6>
@@ -983,7 +985,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1020,7 +1022,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           Zeilla Shop
                         </Link>
                       </h6>
@@ -1086,7 +1088,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1123,7 +1125,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           Ever Green Shop
                         </Link>
                       </h6>
@@ -1189,7 +1191,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1226,7 +1228,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           Maple Shop
                         </Link>
                       </h6>
@@ -1292,7 +1294,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1329,7 +1331,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link href='/vendor-two-details' className=''>
                           New Mart
                         </Link>
                       </h6>
@@ -1395,7 +1397,7 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    href='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1413,7 +1415,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   <i className='ph-bold ph-arrow-left' />
                 </Link>
@@ -1421,7 +1423,7 @@ const VendorTwo = () => {
               <li className='page-item active'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   01
                 </Link>
@@ -1429,7 +1431,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   02
                 </Link>
@@ -1437,7 +1439,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   03
                 </Link>
@@ -1445,7 +1447,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   04
                 </Link>
@@ -1453,7 +1455,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   05
                 </Link>
@@ -1461,7 +1463,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   06
                 </Link>
@@ -1469,7 +1471,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   07
                 </Link>
@@ -1477,7 +1479,7 @@ const VendorTwo = () => {
               <li className='page-item'>
                 <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  to='#'
+                  href='#'
                 >
                   <i className='ph-bold ph-arrow-right' />
                 </Link>

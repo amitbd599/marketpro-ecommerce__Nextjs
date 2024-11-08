@@ -10,7 +10,7 @@ const BreadcrumbThree = ({ title }) => {
           <ul className='flex-align gap-8 flex-wrap'>
             <li className='text-sm'>
               <Link
-                href='/index'
+                href='/'
                 className='text-gray-900 flex-align gap-8 hover-text-main-600'
               >
                 <i className='ph ph-house' />

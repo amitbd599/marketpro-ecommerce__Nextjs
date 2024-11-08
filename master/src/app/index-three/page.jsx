@@ -31,7 +31,7 @@ const page = () => {
       <ColorInit color={true} />
 
       {/* ScrollToTop */}
-      <ScrollToTopInit />
+      <ScrollToTopInit color='#FA6400' />
 
       {/* Preloader */}
       <Preloader />

@@ -19,10 +19,10 @@ const page = () => {
   return (
     <>
       {/* ColorInit */}
-      <ColorInit color={true} />
+      <ColorInit color={false} />
 
       {/* ScrollToTop */}
-      <ScrollToTopInit />
+      <ScrollToTopInit color='#299E60' />
 
       {/* Preloader */}
       <Preloader />

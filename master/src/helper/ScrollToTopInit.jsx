@@ -2,10 +2,10 @@
 
 import ScrollToTop from "react-scroll-to-top";
 
-const ScrollToTopInit = () => {
+const ScrollToTopInit = ({ color }) => {
   return (
     <>
-      <ScrollToTop smooth color='#299E60' />
+      <ScrollToTop smooth color={color} />
     </>
   );
 };
