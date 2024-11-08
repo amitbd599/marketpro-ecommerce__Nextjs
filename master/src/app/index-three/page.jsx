@@ -1,4 +1,5 @@
 import BannerThree from "@/components/BannerThree";
+import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import PromotionalThree from "@/components/PromotionalThree";
 import ColorInit from "@/helper/ColorInit";
@@ -31,6 +32,9 @@ const page = () => {
 
       {/* PromotionalThree */}
       <PromotionalThree />
+
+      {/* FeatureThree */}
+      <FeatureThree />
     </>
   );
 };
