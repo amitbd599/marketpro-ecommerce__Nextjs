@@ -1,5 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
+import ShippingTwo from "@/components/ShippingTwo";
 import ShopSection from "@/components/ShopSection";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -31,6 +33,12 @@ const page = () => {
 
       {/* ShopSection */}
       <ShopSection />
+
+      {/* ShippingTwo */}
+      <ShippingTwo />
+
+      {/* FooterTwo */}
+      <FooterTwo />
     </>
   );
 };
