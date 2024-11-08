@@ -4,6 +4,7 @@ import DealsSection from "@/components/DealsSection";
 import DiscountThree from "@/components/DiscountThree";
 import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
+import InstagramSection from "@/components/InstagramSection";
 import NewArrivalThree from "@/components/NewArrivalThree";
 import PopularProductsThree from "@/components/PopularProductsThree";
 import PromotionalThree from "@/components/PromotionalThree";
@@ -71,6 +72,9 @@ const page = () => {
 
       {/* TestimonialOne */}
       <TestimonialOne />
+
+      {/* InstagramSection */}
+      <InstagramSection />
     </>
   );
 };
