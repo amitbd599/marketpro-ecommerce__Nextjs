@@ -3,6 +3,7 @@ import BreadcrumbImage from "@/components/BreadcrumbImage";
 import CounterSection from "@/components/CounterSection";
 import HeaderTwo from "@/components/HeaderTwo";
 import StepsSection from "@/components/StepsSection";
+import TestimonialOne from "@/components/TestimonialOne";
 import WhyBecomeSeller from "@/components/WhyBecomeSeller";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -43,6 +44,11 @@ const page = () => {
 
       {/* StepsSection */}
       <StepsSection />
+
+      {/* TestimonialOne */}
+      <section className='pb-120'>
+        <TestimonialOne />
+      </section>
     </>
   );
 };
