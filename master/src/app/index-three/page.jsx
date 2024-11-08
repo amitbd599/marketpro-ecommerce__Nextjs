@@ -8,6 +8,7 @@ import NewArrivalThree from "@/components/NewArrivalThree";
 import PopularProductsThree from "@/components/PopularProductsThree";
 import PromotionalThree from "@/components/PromotionalThree";
 import ShippingThree from "@/components/ShippingThree";
+import TestimonialOne from "@/components/TestimonialOne";
 import TextSlider from "@/components/TextSlider";
 import TrendingThree from "@/components/TrendingThree";
 import ColorInit from "@/helper/ColorInit";
@@ -67,6 +68,9 @@ const page = () => {
 
       {/* ShippingThree */}
       <ShippingThree />
+
+      {/* TestimonialOne */}
+      <TestimonialOne />
     </>
   );
 };
