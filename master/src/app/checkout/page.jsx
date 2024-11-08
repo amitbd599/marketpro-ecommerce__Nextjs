@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import Checkout from "@/components/Checkout";
 import HeaderTwo from "@/components/HeaderTwo";
+import ShippingOne from "@/components/ShippingOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -31,6 +32,9 @@ const page = () => {
 
       {/* Checkout */}
       <Checkout />
+
+      {/* ShippingOne */}
+      <ShippingOne />
     </>
   );
 };
