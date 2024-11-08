@@ -1,3 +1,4 @@
+import BottomFooter from "@/components/BottomFooter";
 import BreadcrumbTwo from "@/components/BreadcrumbTwo";
 import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
@@ -47,6 +48,9 @@ const page = () => {
 
       {/* FooterTwo */}
       <FooterOne />
+
+      {/* BottomFooter */}
+      <BottomFooter />
     </>
   );
 };
