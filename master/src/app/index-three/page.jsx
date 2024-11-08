@@ -2,6 +2,7 @@ import BannerThree from "@/components/BannerThree";
 import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import PromotionalThree from "@/components/PromotionalThree";
+import TextSlider from "@/components/TextSlider";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -35,6 +36,9 @@ const page = () => {
 
       {/* FeatureThree */}
       <FeatureThree />
+
+      {/* TextSlider */}
+      <TextSlider />
     </>
   );
 };
