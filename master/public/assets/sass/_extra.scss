@@ -800,3 +800,22 @@
 .slick-arrow:active {
   transform: translate(0, -50%);
 }
+
+.banner-three-slider {
+  .slick-slide.slick-active.slick-current {
+    .font-heading-four {
+      display: inline-block;
+      margin: 0 0.5rem;
+      animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
+      animation-delay: 1s;
+    }
+    .thumbs__img {
+      display: inline-block;
+      margin: 0 0.5rem;
+      animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 3s; /* don't forget to set a duration! */
+      animation-delay: 0.3s;
+    }
+  }
+}

@@ -1,27 +1,15 @@
-import React, { useEffect } from "react";
-import Slider from "react-slick";
-import { WOW } from "wowjs";
-import "animate.css";
-import { Link } from "react-router-dom";
-const BannerThree = () => {
-  useEffect(() => {
-    const wow = new WOW({
-      live: false,
-    });
-    wow.init();
-  }, []);
+"use client";
 
-  let itItWow = () => {
-    const wow = new WOW({
-      live: false,
-    });
-    wow.init();
-  };
+import React, { useEffect } from "react";
+import dynamic from "next/dynamic";
+import "animate.css";
+import Link from "next/link";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
+const BannerThree = () => {
   const NextArrow = ({ onClick }) => (
     <button
       onClick={() => {
         onClick();
-        itItWow();
       }}
       type='button'
       id='banner-three-next'
@@ -35,7 +23,6 @@ const BannerThree = () => {
     <button
       onClick={() => {
         onClick();
-        itItWow();
       }}
       type='button'
       id='banner-three-prev'
@@ -119,7 +106,7 @@ const BannerThree = () => {
                       help you.
                     </p>
                     <Link
-                      to='/shop'
+                      href='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-lg-4 mt-sm-1 wow bounceIn'
                       tabIndex={0}
                     >
@@ -132,7 +119,7 @@ const BannerThree = () => {
                 </div>
                 <div className='col-lg-6'>
                   <div
-                    className='d-flex justify-content-center wow bounceIn'
+                    className='d-flex thumbs__img justify-content-center wow bounceIn'
                     data-wow-duration='3s'
                     data-wow-delay='.5s'
                     data-tilt=''
@@ -172,7 +159,7 @@ const BannerThree = () => {
                       help you.
                     </p>
                     <Link
-                      to='/shop'
+                      href='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48 wow bounceIn'
                       tabIndex={0}
                     >
@@ -185,7 +172,7 @@ const BannerThree = () => {
                 </div>
                 <div className='col-lg-6'>
                   <div
-                    className='d-flex justify-content-center wow bounceIn'
+                    className='d-flex thumbs__img justify-content-center wow bounceIn'
                     data-wow-duration='3s'
                     data-wow-delay='.5s'
                     data-tilt=''
@@ -226,7 +213,7 @@ const BannerThree = () => {
                       help you.
                     </p>
                     <Link
-                      to='/shop'
+                      href='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48 wow bounceIn'
                       tabIndex={0}
                     >
@@ -239,7 +226,7 @@ const BannerThree = () => {
                 </div>
                 <div className='col-lg-6'>
                   <div
-                    className='d-flex justify-content-center wow bounceIn'
+                    className='d-flex thumbs__img justify-content-center wow bounceIn'
                     data-wow-duration='3s'
                     data-wow-delay='.5s'
                     data-tilt=''
