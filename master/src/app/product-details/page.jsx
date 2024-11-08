@@ -2,6 +2,7 @@ import BreadcrumbTwo from "@/components/BreadcrumbTwo";
 import HeaderOne from "@/components/HeaderOne";
 import NewArrivalTwo from "@/components/NewArrivalTwo";
 import ProductDetailsOne from "@/components/ProductDetailsOne";
+import ShippingOne from "@/components/ShippingOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -35,6 +36,9 @@ const page = () => {
 
       {/* NewArrivalTwo */}
       <NewArrivalTwo />
+
+      {/* ShippingOne */}
+      <ShippingOne />
     </>
   );
 };
