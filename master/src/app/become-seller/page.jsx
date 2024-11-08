@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import BreadcrumbImage from "@/components/BreadcrumbImage";
 import HeaderTwo from "@/components/HeaderTwo";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Become Seller"} />
+
+      {/* BreadcrumbImage */}
+      <BreadcrumbImage />
     </>
   );
 };
