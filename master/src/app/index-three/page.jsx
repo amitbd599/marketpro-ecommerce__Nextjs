@@ -1,5 +1,6 @@
 import BannerThree from "@/components/BannerThree";
 import HeaderThree from "@/components/HeaderThree";
+import PromotionalThree from "@/components/PromotionalThree";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* BannerThree */}
       <BannerThree />
+
+      {/* PromotionalThree */}
+      <PromotionalThree />
     </>
   );
 };
