@@ -3,6 +3,7 @@ import BrandThree from "@/components/BrandThree";
 import DealsSection from "@/components/DealsSection";
 import DiscountThree from "@/components/DiscountThree";
 import FeatureThree from "@/components/FeatureThree";
+import FooterThree from "@/components/FooterThree";
 import HeaderThree from "@/components/HeaderThree";
 import InstagramSection from "@/components/InstagramSection";
 import NewArrivalThree from "@/components/NewArrivalThree";
@@ -79,6 +80,9 @@ const page = () => {
 
       {/* NewsletterThree */}
       <NewsletterThree />
+
+      {/* FooterThree */}
+      <FooterThree />
     </>
   );
 };
