@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const VendorTwoDetails = () => {
   let [grid, setGrid] = useState(false);
@@ -57,7 +59,7 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='mt-32'>
                   <h6 className='text-white fw-semibold mb-12'>
-                    <Link to='/vendor-two-details' className=''>
+                    <Link href='/vendor-two-details' className=''>
                       Baishakhi Plus
                     </Link>
                   </h6>
@@ -88,31 +90,31 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='mt-32 d-flex flex-column gap-8'>
                   <Link
-                    to='#'
+                    href='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     About Store
                   </Link>
                   <Link
-                    to='#'
+                    href='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Products
                   </Link>
                   <Link
-                    to='#'
+                    href='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Return Policy
                   </Link>
                   <Link
-                    to='#'
+                    href='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Shipping Policy
                   </Link>
                   <Link
-                    to='#'
+                    href='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Contact Seller
@@ -126,7 +128,7 @@ const VendorTwoDetails = () => {
                 <ul className='max-h-540 overflow-y-auto scroll-sm'>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Mobile &amp; Accessories (12)
@@ -134,7 +136,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Laptop (12)
@@ -142,7 +144,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Electronics (12)
@@ -150,7 +152,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart Watch (12)
@@ -158,7 +160,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Storage (12)
@@ -166,7 +168,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Portable Devices (12)
@@ -174,7 +176,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Action Camera (12)
@@ -182,7 +184,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart Gadget (12)
@@ -190,7 +192,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Monitor (12)
@@ -198,7 +200,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart TV (12)
@@ -206,7 +208,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Camera (12)
@@ -214,7 +216,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-24'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Monitor Stand (12)
@@ -222,7 +224,7 @@ const VendorTwoDetails = () => {
                   </li>
                   <li className='mb-0'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Headphone (12)
@@ -237,7 +239,7 @@ const VendorTwoDetails = () => {
                 <div className='d-flex flex-column gap-24'>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -248,7 +250,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Man Fashion Shoe
                         </Link>
                       </h6>
@@ -282,7 +287,7 @@ const VendorTwoDetails = () => {
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -293,7 +298,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Woman Fashion Bag
                         </Link>
                       </h6>
@@ -327,7 +335,7 @@ const VendorTwoDetails = () => {
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -338,7 +346,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Woman Fashion Tops
                         </Link>
                       </h6>
@@ -372,7 +383,7 @@ const VendorTwoDetails = () => {
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -383,7 +394,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Woman Fashion Hat
                         </Link>
                       </h6>
@@ -417,7 +431,7 @@ const VendorTwoDetails = () => {
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -428,7 +442,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Woman Fashion
                         </Link>
                       </h6>
@@ -462,7 +479,7 @@ const VendorTwoDetails = () => {
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
                     <Link
-                      to='/blog-details'
+                      href='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -473,7 +490,10 @@ const VendorTwoDetails = () => {
                     </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <Link to='/product-details-two' className='text-line-3'>
+                        <Link
+                          href='/product-details-two'
+                          className='text-line-3'
+                        >
                           Woman Fashion Bag
                         </Link>
                       </h6>
@@ -525,7 +545,7 @@ const VendorTwoDetails = () => {
                     <h6 className='text-white'>Daily Offer</h6>
                     <h3 className='my-32 text-white'>SALE 48% OFF</h3>
                     <Link
-                      to='/shop'
+                      href='/shop'
                       className='btn btn-main d-inline-flex align-items-center rounded-8 gap-8'
                     >
                       Shop Now
@@ -604,7 +624,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -653,7 +673,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -696,7 +716,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -707,7 +727,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -756,7 +776,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -799,7 +819,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -810,7 +830,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -859,7 +879,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -902,7 +922,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -913,7 +933,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -962,7 +982,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1005,7 +1025,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1016,7 +1036,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1065,7 +1085,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1108,7 +1128,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1119,7 +1139,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1168,7 +1188,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1211,7 +1231,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1222,7 +1242,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1271,7 +1291,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1314,7 +1334,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1325,7 +1345,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1374,7 +1394,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1417,7 +1437,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1428,7 +1448,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1477,7 +1497,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1520,7 +1540,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1531,7 +1551,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1580,7 +1600,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1623,7 +1643,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1634,7 +1654,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1683,7 +1703,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1726,7 +1746,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
@@ -1737,7 +1757,7 @@ const VendorTwoDetails = () => {
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                   <Link
-                    to='/product-details-two'
+                    href='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1786,7 +1806,7 @@ const VendorTwoDetails = () => {
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
@@ -1829,7 +1849,7 @@ const VendorTwoDetails = () => {
                     </span>
                   </div>
                   <Link
-                    to='/cart'
+                    href='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
