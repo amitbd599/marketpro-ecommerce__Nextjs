@@ -3,6 +3,7 @@ import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import PromotionalThree from "@/components/PromotionalThree";
 import TextSlider from "@/components/TextSlider";
+import TrendingThree from "@/components/TrendingThree";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -39,6 +40,9 @@ const page = () => {
 
       {/* TextSlider */}
       <TextSlider />
+
+      {/* TrendingThree */}
+      <TrendingThree />
     </>
   );
 };

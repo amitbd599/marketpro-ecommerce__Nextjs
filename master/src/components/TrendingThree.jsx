@@ -1,13 +1,24 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
-import { getCountdown } from "../helper/Countdown";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const TrendingThree = () => {
-  const [timeLeft, setTimeLeft] = useState(getCountdown());
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const loadCountdown = async () => {
+      const { getCountdown } = await import("../helper/Countdown");
       setTimeLeft(getCountdown());
+    };
+    loadCountdown();
+    const interval = setInterval(() => {
+      loadCountdown();
     }, 1000);
 
     return () => clearInterval(interval);
@@ -82,7 +93,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -163,7 +174,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -208,7 +219,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -221,7 +232,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -302,7 +313,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -347,7 +358,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -360,7 +371,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -441,7 +452,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -486,7 +497,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -499,7 +510,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -580,7 +591,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -625,7 +636,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -648,7 +659,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -729,7 +740,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -774,7 +785,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -787,7 +798,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -868,7 +879,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -913,7 +924,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -926,7 +937,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1007,7 +1018,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1052,7 +1063,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -1065,7 +1076,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1146,7 +1157,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1191,7 +1202,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -1214,7 +1225,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1295,7 +1306,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1340,7 +1351,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -1353,7 +1364,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1434,7 +1445,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1479,7 +1490,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -1492,7 +1503,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1573,7 +1584,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1618,7 +1629,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
@@ -1631,7 +1642,7 @@ const TrendingThree = () => {
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                     <Link
-                      to='/product-details-two'
+                      href='/product-details-two'
                       className='w-100 h-100 flex-center'
                     >
                       <img
@@ -1712,7 +1723,7 @@ const TrendingThree = () => {
                   <div className='product-card__content mt-16 w-100'>
                     <h6 className='title text-lg fw-semibold my-16'>
                       <Link
-                        to='/product-details-two'
+                        href='/product-details-two'
                         className='link text-line-2'
                         tabIndex={0}
                       >
@@ -1757,7 +1768,7 @@ const TrendingThree = () => {
                       </span>
                     </div>
                     <Link
-                      to='/cart'
+                      href='/cart'
                       className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                       tabIndex={0}
                     >
