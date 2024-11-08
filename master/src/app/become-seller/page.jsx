@@ -1,6 +1,8 @@
+import BottomFooter from "@/components/BottomFooter";
 import Breadcrumb from "@/components/Breadcrumb";
 import BreadcrumbImage from "@/components/BreadcrumbImage";
 import CounterSection from "@/components/CounterSection";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import ShippingOne from "@/components/ShippingOne";
 import StepsSection from "@/components/StepsSection";
@@ -53,6 +55,12 @@ const page = () => {
 
       {/* ShippingOne */}
       <ShippingOne />
+
+      {/* FooterTwo */}
+      <FooterTwo />
+
+      {/* BottomFooter */}
+      <BottomFooter />
     </>
   );
 };
