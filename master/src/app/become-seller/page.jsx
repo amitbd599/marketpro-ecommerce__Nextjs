@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BreadcrumbImage from "@/components/BreadcrumbImage";
 import HeaderTwo from "@/components/HeaderTwo";
+import WhyBecomeSeller from "@/components/WhyBecomeSeller";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -31,6 +32,9 @@ const page = () => {
 
       {/* BreadcrumbImage */}
       <BreadcrumbImage />
+
+      {/* WhyBecomeSeller */}
+      <WhyBecomeSeller />
     </>
   );
 };
