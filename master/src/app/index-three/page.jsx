@@ -1,4 +1,5 @@
 import BannerThree from "@/components/BannerThree";
+import BrandThree from "@/components/BrandThree";
 import DealsSection from "@/components/DealsSection";
 import DiscountThree from "@/components/DiscountThree";
 import FeatureThree from "@/components/FeatureThree";
@@ -59,6 +60,9 @@ const page = () => {
 
       {/* PopularProductsThree */}
       <PopularProductsThree />
+
+      {/* BrandThree */}
+      <BrandThree />
     </>
   );
 };

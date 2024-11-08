@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const BrandThree = () => {
   const NextArrow = ({ onClick }) => (
