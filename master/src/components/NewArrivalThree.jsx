@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const NewArrivalThree = () => {
   return (
@@ -137,7 +137,7 @@ const NewArrivalThree = () => {
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
                         <Link
-                          to='/shop'
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -156,7 +156,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -205,7 +205,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -252,7 +252,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -265,7 +265,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -314,7 +314,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -361,7 +361,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -374,7 +374,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -423,7 +423,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -470,7 +470,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -490,7 +490,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -539,7 +539,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -586,7 +586,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -599,7 +599,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -648,7 +648,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -695,7 +695,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -708,7 +708,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -757,7 +757,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -804,7 +804,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -832,7 +832,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -879,7 +879,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -898,7 +899,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -947,7 +948,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -994,7 +995,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1007,7 +1008,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -1056,7 +1057,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -1103,7 +1104,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1116,7 +1117,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -1165,7 +1166,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -1212,7 +1213,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1232,7 +1233,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -1281,7 +1282,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -1328,7 +1329,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -1341,7 +1342,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -1390,7 +1391,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -1437,7 +1438,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -1450,7 +1451,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -1499,7 +1500,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -1546,7 +1547,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -1574,7 +1575,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -1621,7 +1622,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -1640,7 +1642,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -1689,7 +1691,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -1736,7 +1738,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1749,7 +1751,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -1798,7 +1800,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -1845,7 +1847,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1858,7 +1860,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -1907,7 +1909,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -1954,7 +1956,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -1974,7 +1976,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2023,7 +2025,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -2070,7 +2072,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -2083,7 +2085,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2132,7 +2134,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -2179,7 +2181,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -2192,7 +2194,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2241,7 +2243,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -2288,7 +2290,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -2316,7 +2318,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -2363,7 +2365,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -2382,7 +2385,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -2431,7 +2434,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -2478,7 +2481,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -2491,7 +2494,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -2540,7 +2543,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -2587,7 +2590,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -2600,7 +2603,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -2649,7 +2652,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -2696,7 +2699,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -2716,7 +2719,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2765,7 +2768,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -2812,7 +2815,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -2825,7 +2828,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2874,7 +2877,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -2921,7 +2924,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -2934,7 +2937,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -2983,7 +2986,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -3030,7 +3033,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -3058,7 +3061,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -3105,7 +3108,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -3124,7 +3128,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -3173,7 +3177,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -3220,7 +3224,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -3233,7 +3237,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -3282,7 +3286,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -3329,7 +3333,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -3342,7 +3346,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -3391,7 +3395,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -3438,7 +3442,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -3458,7 +3462,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -3507,7 +3511,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -3554,7 +3558,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -3567,7 +3571,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -3616,7 +3620,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -3663,7 +3667,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -3676,7 +3680,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -3725,7 +3729,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -3772,7 +3776,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -3800,7 +3804,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -3847,7 +3851,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -3866,7 +3871,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -3915,7 +3920,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -3962,7 +3967,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -3975,7 +3980,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -4024,7 +4029,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -4071,7 +4076,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -4084,7 +4089,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -4133,7 +4138,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -4180,7 +4185,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -4200,7 +4205,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -4249,7 +4254,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -4296,7 +4301,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -4309,7 +4314,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -4358,7 +4363,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -4405,7 +4410,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -4418,7 +4423,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -4467,7 +4472,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -4514,7 +4519,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -4542,7 +4547,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
@@ -4589,7 +4594,8 @@ const NewArrivalThree = () => {
                           Summer offer
                         </span>
                         <h5 className='mb-0'>Get 85% Off</h5>
-                        <Link to='/shop'
+                        <Link
+                          href='/shop'
                           className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                           tabIndex={0}
                         >
@@ -4608,7 +4614,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -4657,7 +4663,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -4704,7 +4710,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -4717,7 +4723,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -4766,7 +4772,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -4813,7 +4819,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -4826,7 +4832,7 @@ const NewArrivalThree = () => {
                       <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                         <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                           <Link
-                            to='/product-details-two'
+                            href='/product-details-two'
                             className='w-100 h-100 flex-center'
                           >
                             <img
@@ -4875,7 +4881,7 @@ const NewArrivalThree = () => {
                         <div className='product-card__content mt-16 w-100'>
                           <h6 className='title text-lg fw-semibold my-16'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='link text-line-2'
                               tabIndex={0}
                             >
@@ -4922,7 +4928,7 @@ const NewArrivalThree = () => {
                             </span>
                           </div>
                           <Link
-                            to='/cart'
+                            href='/cart'
                             className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                             tabIndex={0}
                           >
@@ -4942,7 +4948,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -4991,7 +4997,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -5038,7 +5044,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -5051,7 +5057,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -5100,7 +5106,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -5147,7 +5153,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -5160,7 +5166,7 @@ const NewArrivalThree = () => {
                         <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                           <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
                             <Link
-                              to='/product-details-two'
+                              href='/product-details-two'
                               className='w-100 h-100 flex-center'
                             >
                               <img
@@ -5209,7 +5215,7 @@ const NewArrivalThree = () => {
                           <div className='product-card__content mt-16 w-100'>
                             <h6 className='title text-lg fw-semibold my-16'>
                               <Link
-                                to='/product-details-two'
+                                href='/product-details-two'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
@@ -5256,7 +5262,7 @@ const NewArrivalThree = () => {
                               </span>
                             </div>
                             <Link
-                              to='/cart'
+                              href='/cart'
                               className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                               tabIndex={0}
                             >
@@ -5284,7 +5290,7 @@ const NewArrivalThree = () => {
                             Spring Collection
                           </h5>
                           <Link
-                            to='/shop'
+                            href='/shop'
                             className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                             tabIndex={0}
                           >
