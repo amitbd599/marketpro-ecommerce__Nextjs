@@ -1,4 +1,5 @@
 import BreadcrumbTwo from "@/components/BreadcrumbTwo";
+import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
 import NewArrivalTwo from "@/components/NewArrivalTwo";
 import NewsletterOne from "@/components/NewsletterOne";
@@ -43,6 +44,9 @@ const page = () => {
 
       {/* NewsletterOne */}
       <NewsletterOne />
+
+      {/* FooterTwo */}
+      <FooterOne />
     </>
   );
 };
