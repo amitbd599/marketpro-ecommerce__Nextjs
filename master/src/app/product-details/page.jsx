@@ -1,5 +1,6 @@
 import BreadcrumbTwo from "@/components/BreadcrumbTwo";
 import HeaderOne from "@/components/HeaderOne";
+import NewArrivalTwo from "@/components/NewArrivalTwo";
 import ProductDetailsOne from "@/components/ProductDetailsOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -31,6 +32,9 @@ const page = () => {
 
       {/* ProductDetailsOne */}
       <ProductDetailsOne />
+
+      {/* NewArrivalTwo */}
+      <NewArrivalTwo />
     </>
   );
 };
