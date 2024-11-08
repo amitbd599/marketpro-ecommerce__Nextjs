@@ -1,6 +1,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import NewArrivalTwo from "@/components/NewArrivalTwo";
+import NewsletterOne from "@/components/NewsletterOne";
 import ProductDetailsTwo from "@/components/ProductDetailsTwo";
 import ShippingOne from "@/components/ShippingOne";
 import ColorInit from "@/helper/ColorInit";
@@ -39,6 +41,12 @@ const page = () => {
 
       {/* ShippingOne */}
       <ShippingOne />
+
+      {/* NewsletterOne */}
+      <NewsletterOne />
+
+      {/* FooterTwo */}
+      <FooterTwo />
     </>
   );
 };
