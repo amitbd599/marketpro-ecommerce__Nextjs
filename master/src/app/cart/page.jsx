@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import CartSection from "@/components/CartSection";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import ShippingOne from "@/components/ShippingOne";
 import ColorInit from "@/helper/ColorInit";
@@ -35,6 +36,9 @@ const page = () => {
 
       {/* ShippingOne */}
       <ShippingOne />
+
+      {/* FooterTwo */}
+      <FooterTwo />
     </>
   );
 };
