@@ -1,5 +1,6 @@
 import BreadcrumbTwo from "@/components/BreadcrumbTwo";
 import HeaderOne from "@/components/HeaderOne";
+import ProductDetailsOne from "@/components/ProductDetailsOne";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
 import ScrollToTopInit from "@/helper/ScrollToTopInit";
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* Breadcrumb */}
       <BreadcrumbTwo title={"Product Details"} />
+
+      {/* ProductDetailsOne */}
+      <ProductDetailsOne />
     </>
   );
 };
