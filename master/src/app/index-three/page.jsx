@@ -1,4 +1,5 @@
 import BannerThree from "@/components/BannerThree";
+import DiscountThree from "@/components/DiscountThree";
 import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import PromotionalThree from "@/components/PromotionalThree";
@@ -43,6 +44,9 @@ const page = () => {
 
       {/* TrendingThree */}
       <TrendingThree />
+
+      {/* DiscountThree */}
+      <DiscountThree />
     </>
   );
 };
