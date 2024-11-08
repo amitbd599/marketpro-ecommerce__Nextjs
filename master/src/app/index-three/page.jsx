@@ -7,6 +7,7 @@ import HeaderThree from "@/components/HeaderThree";
 import NewArrivalThree from "@/components/NewArrivalThree";
 import PopularProductsThree from "@/components/PopularProductsThree";
 import PromotionalThree from "@/components/PromotionalThree";
+import ShippingThree from "@/components/ShippingThree";
 import TextSlider from "@/components/TextSlider";
 import TrendingThree from "@/components/TrendingThree";
 import ColorInit from "@/helper/ColorInit";
@@ -63,6 +64,9 @@ const page = () => {
 
       {/* BrandThree */}
       <BrandThree />
+
+      {/* ShippingThree */}
+      <ShippingThree />
     </>
   );
 };
