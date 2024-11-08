@@ -6,6 +6,7 @@ import FeatureThree from "@/components/FeatureThree";
 import HeaderThree from "@/components/HeaderThree";
 import InstagramSection from "@/components/InstagramSection";
 import NewArrivalThree from "@/components/NewArrivalThree";
+import NewsletterThree from "@/components/NewsletterThree";
 import PopularProductsThree from "@/components/PopularProductsThree";
 import PromotionalThree from "@/components/PromotionalThree";
 import ShippingThree from "@/components/ShippingThree";
@@ -75,6 +76,9 @@ const page = () => {
 
       {/* InstagramSection */}
       <InstagramSection />
+
+      {/* NewsletterThree */}
+      <NewsletterThree />
     </>
   );
 };
