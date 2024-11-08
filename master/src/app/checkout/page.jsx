@@ -1,3 +1,4 @@
+import BottomFooter from "@/components/BottomFooter";
 import Breadcrumb from "@/components/Breadcrumb";
 import Checkout from "@/components/Checkout";
 import FooterTwo from "@/components/FooterTwo";
@@ -39,6 +40,9 @@ const page = () => {
 
       {/* FooterTwo */}
       <FooterTwo />
+
+      {/* BottomFooter */}
+      <BottomFooter />
     </>
   );
 };
