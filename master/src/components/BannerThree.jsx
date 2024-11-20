@@ -1,36 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 import "animate.css";
 import Link from "next/link";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const BannerThree = () => {
-  const NextArrow = ({ onClick }) => (
-    <button
-      onClick={() => {
-        onClick();
-      }}
-      type='button'
-      id='banner-three-next'
-      className='slick-next slick-arrow flex-center rounded-circle border border-white hover-border-main-600 text-white text-2xl hover-bg-main-600 hover-text-white transition-1 position-absolute top-50 translate-middle-y inset-inline-end-0 me-lg-5 me-32'
-    >
-      <i className='ph ph-caret-right' />
-    </button>
-  );
-
-  const PrevArrow = ({ onClick }) => (
-    <button
-      onClick={() => {
-        onClick();
-      }}
-      type='button'
-      id='banner-three-prev'
-      className='slick-prev slick-arrow flex-center rounded-circle border border-white hover-border-main-600 text-white text-2xl hover-bg-main-600 hover-text-white transition-1 position-absolute top-50 translate-middle-y inset-inline-start-0 ms-lg-5 ms-32'
-    >
-      <i className='ph ph-caret-left' />
-    </button>
-  );
+  const sliderRef = useRef(null);
 
   const settings = {
     slidesToShow: 1,
@@ -40,9 +16,7 @@ const BannerThree = () => {
     speed: 1500,
     dots: false,
     pauseOnHover: true,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    arrows: false,
     infinite: true,
   };
 
@@ -72,17 +46,27 @@ const BannerThree = () => {
       </h1>
 
       <div className='flex-align'>
-        <button id='banner-three-prev' className='slick-prev slick-arrow'>
-          <i className='ph ph-caret-left'></i>
+        <button
+          onClick={() => sliderRef.current.slickPrev()}
+          type='button'
+          id='banner-three-prev'
+          className='slick-prev slick-arrow flex-center rounded-circle border border-white hover-border-main-600 text-white text-2xl hover-bg-main-600 hover-text-white transition-1 position-absolute top-50 translate-middle-y inset-inline-start-0 ms-lg-5 ms-32'
+        >
+          <i className='ph ph-caret-left' />
         </button>
-        <button id='banner-three-next' className='slick-next slick-arrow'>
-          <i className='ph ph-caret-right'></i>
+        <button
+          onClick={() => sliderRef.current.slickNext()}
+          type='button'
+          id='banner-three-next'
+          className='slick-next slick-arrow flex-center rounded-circle border border-white hover-border-main-600 text-white text-2xl hover-bg-main-600 hover-text-white transition-1 position-absolute top-50 translate-middle-y inset-inline-end-0 me-lg-5 me-32'
+        >
+          <i className='ph ph-caret-right' />
         </button>
       </div>
 
       <div className='container container-lg'>
         <div>
-          <Slider {...settings} className='banner-three-slider'>
+          <Slider ref={sliderRef} {...settings} className='banner-three-slider'>
             <div className=''>
               <div className='row align-items-center gy-4'>
                 <div className='col-lg-6'>

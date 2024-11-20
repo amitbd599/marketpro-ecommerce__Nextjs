@@ -6,7 +6,7 @@ const ProductListOne = () => {
     <div className='product mt-24'>
       <div className='container container-lg'>
         <div className='row gy-4 g-12'>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'
@@ -70,7 +70,7 @@ const ProductListOne = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'
@@ -134,7 +134,7 @@ const ProductListOne = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'
@@ -198,7 +198,7 @@ const ProductListOne = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'
@@ -262,7 +262,7 @@ const ProductListOne = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'
@@ -326,7 +326,7 @@ const ProductListOne = () => {
               </div>
             </div>
           </div>
-          <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+          <div className='col-xxl-2 col-lg-3 col-sm-6'>
             <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <Link
                 href='/cart'

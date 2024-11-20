@@ -3,9 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-import dynamic from "next/dynamic";
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-
 const DealsSection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

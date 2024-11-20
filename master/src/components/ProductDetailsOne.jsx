@@ -144,7 +144,7 @@ const ProductDetailsOne = () => {
                     </div>
                     <div className='countdown' id='countdown11'>
                       <ul className='countdown-list flex-align flex-wrap'>
-                        <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center'>
+                        <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-32 h-28 rounded-4 border border-main-600 p-0 flex-center'>
                           {timeLeft.days} <span className='days' />
                         </li>
                         <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center'>

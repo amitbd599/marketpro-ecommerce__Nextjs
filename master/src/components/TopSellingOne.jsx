@@ -1,47 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const TopSellingOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
-
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
+  const sliderRef = useRef(null);
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1399,
@@ -70,13 +44,31 @@ const TopSellingOne = () => {
           <div className='section-heading mb-24'>
             <div className='flex-between flex-wrap gap-8'>
               <h5 className='mb-0'>Top Selling Products</h5>
-              <div className='flex-align mr-point gap-16'>
+              <div className='inner flex-align  gap-16'>
                 <Link
                   href='/shop'
                   className='text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline'
                 >
                   View All Deals
                 </Link>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef.current.slickPrev()}
+                    type='button'
+                    id='top-selling-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef.current.slickNext()}
+                    type='button'
+                    id='top-selling-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +101,7 @@ const TopSellingOne = () => {
             </div>
             <div className='col-md-8'>
               <div className='top-selling-product-slider arrow-style-two'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef} {...settings}>
                   <div>
                     <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                       <Link

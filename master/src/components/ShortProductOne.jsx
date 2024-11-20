@@ -1,46 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 
 const ShortProductOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
+  const sliderRef_1 = useRef(null);
+  const sliderRef_2 = useRef(null);
+  const sliderRef_3 = useRef(null);
+  const sliderRef_4 = useRef(null);
 
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 768,
@@ -62,13 +40,31 @@ const ShortProductOne = () => {
         <div className='row gy-4'>
           <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 '>
-              <div className='p-16 bg-main-50 rounded-16 mb-32'>
+              <div className='p-16 bg-main-50 rounded-16 mb-32 flex-align justify-content-between'>
                 <h6 className='underlined-line position-relative mb-0 pb-16 d-inline-block'>
                   Featured Products
                 </h6>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef_1.current.slickPrev()}
+                    type='button'
+                    id='deals-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef_1.current.slickNext()}
+                    type='button'
+                    id='deals-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
               <div className='short-product-list arrow-style-two'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef_1} {...settings}>
                   <div>
                     <div className='flex-align gap-16 mb-40'>
                       <div className='w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0'>
@@ -391,13 +387,31 @@ const ShortProductOne = () => {
           </div>
           <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 '>
-              <div className='p-16 bg-main-50 rounded-16 mb-32'>
+              <div className='p-16 bg-main-50 rounded-16 mb-32 flex-align justify-content-between'>
                 <h6 className='underlined-line position-relative mb-0 pb-16 d-inline-block'>
                   Top Selling Products
                 </h6>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef_2.current.slickPrev()}
+                    type='button'
+                    id='deals-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef_2.current.slickNext()}
+                    type='button'
+                    id='deals-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
               <div className='short-product-list arrow-style-two'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef_2} {...settings}>
                   <div>
                     <div className='flex-align gap-16 mb-40'>
                       <div className='w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0'>
@@ -720,13 +734,31 @@ const ShortProductOne = () => {
           </div>
           <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 '>
-              <div className='p-16 bg-main-50 rounded-16 mb-32'>
+              <div className='p-16 bg-main-50 rounded-16 mb-32 flex-align justify-content-between'>
                 <h6 className='underlined-line position-relative mb-0 pb-16 d-inline-block'>
                   On-sale Products
                 </h6>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef_3.current.slickPrev()}
+                    type='button'
+                    id='deals-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef_3.current.slickNext()}
+                    type='button'
+                    id='deals-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
               <div className='short-product-list arrow-style-two'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef_3} {...settings}>
                   <div>
                     <div className='flex-align gap-16 mb-40'>
                       <div className='w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0'>
@@ -1049,13 +1081,31 @@ const ShortProductOne = () => {
           </div>
           <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 '>
-              <div className='p-16 bg-main-50 rounded-16 mb-32'>
+              <div className='p-16 bg-main-50 rounded-16 mb-32 flex-align justify-content-between'>
                 <h6 className='underlined-line position-relative mb-0 pb-16 d-inline-block'>
                   Top Rated Products
                 </h6>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef_4.current.slickPrev()}
+                    type='button'
+                    id='deals-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef_4.current.slickNext()}
+                    type='button'
+                    id='deals-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
               <div className='short-product-list arrow-style-two'>
-                <Slider {...settings}>
+                <Slider ref={sliderRef_4} {...settings}>
                   <div>
                     <div className='flex-align gap-16 mb-40'>
                       <div className='w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0'>

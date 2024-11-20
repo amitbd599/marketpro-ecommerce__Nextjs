@@ -1,46 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 
 const OrganicOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
+  const sliderRef = useRef(null);
 
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1599,
@@ -63,7 +38,7 @@ const OrganicOne = () => {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -80,18 +55,36 @@ const OrganicOne = () => {
         <div className='section-heading'>
           <div className='flex-between flex-wrap gap-8'>
             <h5 className='mb-0'>Organic Food</h5>
-            <div className='flex-align mr-point gap-16'>
+            <div className='inner flex-align  gap-16'>
               <Link
                 href='/shop'
                 className='text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline'
               >
                 All Categories
               </Link>
+              <div className='flex-align gap-8'>
+                <button
+                  onClick={() => sliderRef.current.slickPrev()}
+                  type='button'
+                  id='organic-prev'
+                  className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-left' />
+                </button>
+                <button
+                  onClick={() => sliderRef.current.slickNext()}
+                  type='button'
+                  id='organic-next'
+                  className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-right' />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div className='organic-food__slider arrow-style-two'>
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             <div>
               <div className='product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link

@@ -121,7 +121,7 @@ const RecommendedOne = () => {
             tabIndex={0}
           >
             <div className='row g-12'>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <Link
                     href='/product-details'
@@ -177,7 +177,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -236,7 +236,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -295,7 +295,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-info-600 px-8 py-4 text-sm text-white'>
                     Best Sale
@@ -354,7 +354,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <Link
                     href='/product-details'
@@ -410,7 +410,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -469,7 +469,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <Link
                     href='/product-details'
@@ -525,7 +525,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -584,7 +584,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-warning-600 px-8 py-4 text-sm text-white'>
                     New
@@ -643,7 +643,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -702,7 +702,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
@@ -761,7 +761,7 @@ const RecommendedOne = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xxl-2 col-lg-3 col-sm-4 col-6'>
+              <div className='col-xxl-2 col-lg-3 col-sm-6'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-warning-600 px-8 py-4 text-sm text-white'>
                     New

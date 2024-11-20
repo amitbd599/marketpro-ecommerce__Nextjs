@@ -6,7 +6,6 @@ import FooterTwo from "@/components/FooterTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import ShippingOne from "@/components/ShippingOne";
 import StepsSection from "@/components/StepsSection";
-import TestimonialOne from "@/components/TestimonialOne";
 import WhyBecomeSeller from "@/components/WhyBecomeSeller";
 import ColorInit from "@/helper/ColorInit";
 import Preloader from "@/helper/Preloader";
@@ -47,11 +46,6 @@ const page = () => {
 
       {/* StepsSection */}
       <StepsSection />
-
-      {/* TestimonialOne */}
-      <section className='pb-120'>
-        <TestimonialOne />
-      </section>
 
       {/* ShippingOne */}
       <ShippingOne />

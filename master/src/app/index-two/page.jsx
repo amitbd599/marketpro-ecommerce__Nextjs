@@ -1,6 +1,7 @@
 import BannerTwo from "@/components/BannerTwo";
 import BigDealOne from "@/components/BigDealOne";
 import BottomFooter from "@/components/BottomFooter";
+import BrandTwo from "@/components/BrandTwo";
 import DaySaleOne from "@/components/DaySaleOne";
 import DealsOne from "@/components/DealsOne";
 import DiscountOne from "@/components/DiscountOne";
@@ -79,6 +80,9 @@ const page = () => {
 
       {/* RecentlyViewedOne */}
       <RecentlyViewedOne />
+
+      {/* BrandTwo */}
+      <BrandTwo />
 
       {/* ShippingTwo */}
       <ShippingTwo />

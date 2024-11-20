@@ -52,6 +52,38 @@ const TestimonialOne = () => {
     speed: 900,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   const testimonialsData = [
@@ -140,6 +172,8 @@ const TestimonialOne = () => {
                 ))}
               </Slider>
             </div>
+            <br />
+            <br />
             <Slider
               {...thumbSliderSettings}
               ref={thumbSliderRef}

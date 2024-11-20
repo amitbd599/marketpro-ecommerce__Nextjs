@@ -1,36 +1,11 @@
 "use client";
-import React, { memo, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
-const SampleNextArrow = memo((props) => {
-  const { className, onClick } = props;
-  return (
-    <button
-      type='button'
-      onClick={onClick}
-      className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-    >
-      <i className='ph ph-caret-right' />
-    </button>
-  );
-});
-
-const SamplePrevArrow = memo((props) => {
-  const { className, onClick } = props;
-  return (
-    <button
-      type='button'
-      onClick={onClick}
-      className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-    >
-      <i className='ph ph-caret-left' />
-    </button>
-  );
-});
-
 const HotDealsOne = () => {
+  const sliderRef = useRef(null);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -53,15 +28,13 @@ const HotDealsOne = () => {
 
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1399,
@@ -89,13 +62,31 @@ const HotDealsOne = () => {
         <div className='section-heading'>
           <div className='flex-between flex-wrap gap-8'>
             <h5 className='mb-0'>Hot Deals Todays</h5>
-            <div className='flex-align mr-point gap-16'>
+            <div className='inner flex-align  gap-16'>
               <Link
                 href='/shop'
                 className='text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline'
               >
                 View All Deals
               </Link>
+              <div className='flex-align gap-8'>
+                <button
+                  onClick={() => sliderRef.current.slickPrev()}
+                  type='button'
+                  id='deals-prev'
+                  className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-left' />
+                </button>
+                <button
+                  onClick={() => sliderRef.current.slickNext()}
+                  type='button'
+                  id='deals-next'
+                  className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-right' />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -149,7 +140,7 @@ const HotDealsOne = () => {
           </div>
           <div className='col-md-8'>
             <div className='hot-deals-slider arrow-style-two'>
-              <Slider {...settings}>
+              <Slider ref={sliderRef} {...settings}>
                 <div>
                   <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                     <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>

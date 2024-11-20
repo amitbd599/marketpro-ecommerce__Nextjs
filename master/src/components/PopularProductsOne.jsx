@@ -80,7 +80,7 @@ const PopularProductsOne = () => {
             </div>
           </div>
           <div className='row gy-4'>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -125,7 +125,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -170,7 +170,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -215,7 +215,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -260,7 +260,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -305,7 +305,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -350,7 +350,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'
@@ -395,7 +395,7 @@ const PopularProductsOne = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xxl-3 col-xl-4 col-sm-6 col-xs-6'>
+            <div className='col-xxl-3 col-xl-4 col-sm-6'>
               <div className='product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <Link
                   href='/product-details'

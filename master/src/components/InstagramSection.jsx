@@ -1,33 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const InstagramSection = () => {
-  const NextArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='feature-item-wrapper-next'
-      className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-right' />
-    </button>
-  );
+  const sliderRef = useRef(null);
 
-  const PrevArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='feature-item-wrapper-prev'
-      className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-left' />
-    </button>
-  );
   const settings = {
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -36,11 +17,9 @@ const InstagramSection = () => {
     speed: 1500,
     dots: false,
     pauseOnHover: true,
-    arrows: true,
+    arrows: false,
     draggable: true,
     infinite: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1299,
@@ -73,7 +52,7 @@ const InstagramSection = () => {
     ],
   };
   return (
-    <section className='instagram py-120 overflow-hidden'>
+    <section className='instagram pb-120 overflow-hidden'>
       <div className='container container-lg'>
         <div className='section-heading'>
           <div className='flex-between flex-wrap gap-8'>
@@ -83,19 +62,37 @@ const InstagramSection = () => {
                 Get inspired by Carina fans from all around the world
               </p>
             </div>
-            <div className='flex-align gap-16'>
+
+            <div className='inner flex-align gap-16'>
               <Link
                 href='/shop'
                 className='text-sm fw-semibold text-gray-700 hover-text-main-600 hover-text-decoration-underline'
               >
                 View All
               </Link>
-              <div className='flex-align gap-8'></div>
+              <div className='flex-align gap-8'>
+                <button
+                  onClick={() => sliderRef.current.slickPrev()}
+                  type='button'
+                  id='instagram-prev'
+                  className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-left' />
+                </button>
+                <button
+                  onClick={() => sliderRef.current.slickNext()}
+                  type='button'
+                  id='instagram-next'
+                  className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-right' />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div className='instagram-slider'>
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img1.png' alt='' />
