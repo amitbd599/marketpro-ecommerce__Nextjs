@@ -436,11 +436,11 @@ const VendorsListTwo = () => {
                   <i className='ph ph-magnifying-glass' />
                 </button>
               </form>
-              <div className='flex-align gap-16'>
+              <div className='flex-align gap-16 '>
                 <span className='text-neutral-600 fw-medium px-40 py-12 rounded-pill border border-neutral-100 d-md-block d-none'>
                   Showing 1-20 of 85 results
                 </span>
-                <div className='flex-align gap-8'>
+                <div className='flex-align gap-8 '>
                   <span className='text-gray-900 flex-shrink-0'>Sort by:</span>
                   <select
                     className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'

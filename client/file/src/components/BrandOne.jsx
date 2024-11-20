@@ -1,45 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 
 const BrandOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
-
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
+  const sliderRef = useRef(null);
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 8,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1599,
@@ -86,18 +60,36 @@ const BrandOne = () => {
           <div className='section-heading'>
             <div className='flex-between flex-wrap gap-8'>
               <h5 className='mb-0'>Shop by Brands</h5>
-              <div className='flex-align mr-point gap-16'>
+              <div className=' inner flex-align justify-content-between  gap-16'>
                 <Link
                   href='/shop'
                   className='text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline'
                 >
                   View All Deals
                 </Link>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef.current.slickPrev()}
+                    type='button'
+                    id='brand-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef.current.slickNext()}
+                    type='button'
+                    id='brand-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <div className='brand-slider arrow-style-two'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div className='brand-item'>
                 <img src='assets/images/thumbs/brand-img1.png' alt='' />
               </div>

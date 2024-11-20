@@ -1,42 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const BrandThree = () => {
-  const NextArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='topBrand-next'
-      className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-right'></i>
-    </button>
-  );
-
-  const PrevArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='topBrand-prev'
-      className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-left'></i>
-    </button>
-  );
+  const sliderRef = useRef(null);
   const settings = {
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     dots: false,
-    arrows: true,
+    arrows: false,
     speed: 900,
     infinite: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1599,
@@ -83,16 +61,34 @@ const BrandThree = () => {
     ],
   };
   return (
-    <div className='top-brand three pb-80 overflow-hidden'>
+    <div className='top-brand three pb-20 overflow-hidden'>
       <div className='container container-lg'>
         <div className='border border-gray-100 p-24 rounded-16'>
           <div className='section-heading mb-24'>
             <div className='flex-between flex-wrap gap-8'>
               <h5 className='mb-0 text-uppercase'>Top Brands</h5>
+              <div className='flex-align gap-8'>
+                <button
+                  onClick={() => sliderRef.current.slickPrev()}
+                  type='button'
+                  id='topBrand-prev'
+                  className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-left' />
+                </button>
+                <button
+                  onClick={() => sliderRef.current.slickNext()}
+                  type='button'
+                  id='topBrand-next'
+                  className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
+                >
+                  <i className='ph ph-caret-right' />
+                </button>
+              </div>
             </div>
           </div>
           <div className='top-brand__slider'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div>
                 <img src='assets/images/thumbs/brand-three-img1.png' alt='' />
               </div>

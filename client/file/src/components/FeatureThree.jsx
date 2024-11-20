@@ -1,33 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const FeatureThree = () => {
-  const NextArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='feature-item-wrapper-next'
-      className='slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-right' />
-    </button>
-  );
-
-  const PrevArrow = ({ onClick }) => (
-    <button
-      onClick={onClick}
-      type='button'
-      id='feature-item-wrapper-prev'
-      className='slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
-    >
-      <i className='ph ph-caret-left' />
-    </button>
-  );
+  const sliderRef = useRef(null);
   const settings = {
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -36,11 +16,9 @@ const FeatureThree = () => {
     speed: 900,
     dots: false,
     pauseOnHover: true,
-    arrows: true,
+    arrows: false,
     draggable: true,
     infinite: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1599,
@@ -69,18 +47,6 @@ const FeatureThree = () => {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 424,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 359,
-        settings: {
           slidesToShow: 1,
         },
       },
@@ -96,8 +62,27 @@ const FeatureThree = () => {
           <h5 className='mb-0  text-uppercase'>Popular Categories</h5>
         </div>
         <div className='position-relative arrow-center'>
+          <div className='flex-align'>
+            <button
+              onClick={() => sliderRef.current.slickPrev()}
+              type='button'
+              id='feature-item-wrapper-prev'
+              className='slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
+            >
+              <i className='ph ph-caret-left' />
+            </button>
+            <button
+              onClick={() => sliderRef.current.slickNext()}
+              type='button'
+              id='feature-item-wrapper-next'
+              className='slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
+            >
+              <i className='ph ph-caret-right' />
+            </button>
+          </div>
+
           <div className='feature-three-item-wrapper'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-yellow-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link href='/shop' className='w-100 h-100 flex-center'>

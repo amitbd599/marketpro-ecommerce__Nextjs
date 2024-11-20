@@ -6,10 +6,10 @@ const VendorsList = () => {
     <section className='vendors-list py-80'>
       <div className='container container-lg'>
         <div className='flex-between flex-wrap gap-8 mb-40'>
-          <span className='text-neutral-600 fw-medium px-40 py-12 rounded-pill border border-neutral-100'>
+          <span className='text-neutral-600 fw-medium px-40 py-12 rounded-pill border border-neutral-100 show'>
             Showing 1-20 of 85 results
           </span>
-          <div className='flex-align gap-16'>
+          <div className='flex-align gap-16 sort'>
             <form
               action='#'
               className='search-form__wrapper position-relative d-block'
@@ -26,7 +26,7 @@ const VendorsList = () => {
                 <i className='ph ph-magnifying-glass' />
               </button>
             </form>
-            <div className='flex-align gap-8'>
+            <div className=' flex-align gap-8'>
               <span className='text-gray-900 flex-shrink-0'>Sort by:</span>
               <select
                 className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'

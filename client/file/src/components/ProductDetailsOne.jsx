@@ -144,7 +144,7 @@ const ProductDetailsOne = () => {
                     </div>
                     <div className='countdown' id='countdown11'>
                       <ul className='countdown-list flex-align flex-wrap'>
-                        <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center'>
+                        <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-32 h-28 rounded-4 border border-main-600 p-0 flex-center'>
                           {timeLeft.days} <span className='days' />
                         </li>
                         <li className='countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center'>
@@ -465,9 +465,11 @@ const ProductDetailsOne = () => {
                   <div className='mb-40'>
                     <h6 className='mb-24'>Product Specifications</h6>
                     <ul className='mt-32'>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Product Type:
@@ -477,9 +479,11 @@ const ProductDetailsOne = () => {
                           </span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Product Name:
@@ -489,45 +493,55 @@ const ProductDetailsOne = () => {
                           </span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Brand:
                           <span className='text-gray-500'> Lay's</span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           FSA Eligible:
                           <span className='text-gray-500'> No</span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Size/Count:
                           <span className='text-gray-500'> 8.0oz</span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Item Code:
                           <span className='text-gray-500'> 331539</span>
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start   gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-heading fw-medium'>
                           Ingredients:
@@ -592,18 +606,22 @@ const ProductDetailsOne = () => {
                   <div className='mb-0'>
                     <h6 className='mb-24'>More Details</h6>
                     <ul className='mt-32'>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-gray-500'>
                           {" "}
                           Lunarlon midsole delivers ultra-plush responsiveness
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-gray-500'>
                           {" "}
@@ -611,18 +629,22 @@ const ProductDetailsOne = () => {
                           cushioning
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-gray-500'>
                           {" "}
                           Colour Shown: Ale Brown/Black/Goldtone/Ale Brown
                         </span>
                       </li>
-                      <li className='text-gray-400 mb-14 flex-align gap-14'>
-                        <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
-                          <i className='ph ph-check' />
+                      <li className='text-gray-400 mb-14 flex-align align-items-start gap-14'>
+                        <span className='pt-1'>
+                          <span className='w-20 h-20 bg-main-50 text-main-600 text-xs flex-center rounded-circle'>
+                            <i className='ph ph-check' />
+                          </span>
                         </span>
                         <span className='text-gray-500'>
                           {" "}

@@ -6,7 +6,7 @@ const PromotionalTwo = () => {
     <section className='promotional-banner mt-32'>
       <div className='container container-lg'>
         <div className='row gy-4'>
-          <div className='col-lg-4 col-sm-6'>
+          <div className='col-lg-4 col-md-6'>
             <div className='position-relative rounded-16 overflow-hidden z-1 p-32'>
               <img
                 src='assets/images/bg/promo-bg-img1.png'
@@ -33,7 +33,7 @@ const PromotionalTwo = () => {
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-sm-6'>
+          <div className='col-lg-4 col-md-6'>
             <div className='position-relative rounded-16 overflow-hidden z-1 p-32'>
               <img
                 src='assets/images/bg/promo-bg-img2.png'
@@ -60,7 +60,7 @@ const PromotionalTwo = () => {
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-sm-6'>
+          <div className='col-lg-4 col-md-6'>
             <div className='position-relative rounded-16 overflow-hidden z-1 p-32'>
               <img
                 src='assets/images/bg/promo-bg-img3.png'

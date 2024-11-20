@@ -1,43 +1,17 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 const BannerOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
-
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
+  const sliderRef = useRef(null);
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className='banner'>
@@ -56,9 +30,27 @@ const BannerOne = () => {
             alt=''
             className='banner-img position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1 object-fit-cover rounded-24'
           />
-          <div className='flex-align'></div>
+          <div className='flex-align'>
+            <button
+              onClick={() => sliderRef.current.slickPrev()}
+              type='button'
+              id='banner-prev'
+              className='slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
+            >
+              <i className='ph ph-caret-left' />
+            </button>
+            <button
+              onClick={() => sliderRef.current.slickNext()}
+              type='button'
+              id='banner-next'
+              className='slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
+            >
+              <i className='ph ph-caret-right' />
+            </button>
+          </div>
+
           <div className='banner-slider'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div className='banner-slider__item'>
                 <div className='banner-slider__inner flex-between position-relative'>
                   <div className='banner-item__content'>

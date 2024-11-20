@@ -918,3 +918,22 @@
     width: 100%;
   }
 }
+
+.vendors-list {
+  .show {
+    @include msm-screen {
+      width: 100%;
+    }
+  }
+  .sort {
+    @include msm-screen {
+      display: grid;
+      width: 100%;
+    }
+  }
+  .search-form__wrapper {
+    @include msm-screen {
+      width: 100%;
+    }
+  }
+}

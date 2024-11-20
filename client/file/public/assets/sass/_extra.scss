@@ -14,60 +14,6 @@
   }
 }
 
-.flash-sales {
-  .mr-point {
-    margin-right: 124px;
-
-    @include sm-screen {
-      margin-right: 108px;
-    }
-  }
-
-  .flash-sales__slider {
-    .slick-arrow.slick-prev {
-      position: absolute;
-      top: -60px;
-      right: 60px;
-      left: auto;
-
-      @include xl-screen {
-        top: -58px;
-      }
-
-      @include lg-screen {
-        top: -40px;
-      }
-
-      @include sm-screen {
-        top: -37px;
-      }
-    }
-
-    .slick-arrow.slick-next {
-      position: absolute;
-      top: -60px;
-      right: 0px;
-      left: auto;
-
-      @include xl-screen {
-        top: -58px;
-      }
-
-      @include lg-screen {
-        top: -40px;
-      }
-
-      @include sm-screen {
-        top: -37px;
-      }
-
-      @include md-screen {
-        right: 14px;
-      }
-    }
-  }
-}
-
 .hot-deals {
   .mr-point {
     margin-right: 124px;
@@ -336,7 +282,7 @@
       }
 
       @include sm-screen {
-        top: -218px;
+        display: none;
       }
     }
 
@@ -359,7 +305,7 @@
       }
 
       @include sm-screen {
-        top: -218px;
+        display: none;
       }
     }
   }
@@ -444,7 +390,7 @@
       }
 
       @include sm-screen {
-        top: -38px;
+        display: none;
       }
     }
 
@@ -467,7 +413,7 @@
       }
 
       @include sm-screen {
-        top: -38px;
+        display: none;
       }
     }
   }
@@ -504,7 +450,7 @@
       }
 
       @include sm-screen {
-        top: -42px;
+        display: none;
       }
     }
 
@@ -527,7 +473,7 @@
       }
 
       @include sm-screen {
-        top: -42px;
+        display: none;
       }
     }
   }
@@ -797,10 +743,6 @@
   }
 }
 
-.slick-arrow:active {
-  transform: translate(0, -50%);
-}
-
 .banner-three-slider {
   .slick-slide.slick-active.slick-current {
     .font-heading-four {
@@ -820,6 +762,178 @@
   }
 }
 
-.not__found {
-  min-height: 100vh;
+.product-card__content {
+  width: 100%;
+}
+
+.product-card.style-two {
+  @include msm-screen {
+    flex-direction: column;
+  }
+  .product-card__thumb {
+    @include msm-screen {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.product-card {
+  @include msm-screen {
+    flex-direction: column !important;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: static;
+  transform: translate(0, 0);
+}
+
+.slick-arrow:active {
+  transform: translate(0, 0);
+}
+
+.arrow-center .slick-arrow:active {
+  transform: translateY(-50%);
+}
+.feature .arrow-center .slick-arrow:active {
+  transform: translateY(0%);
+}
+
+.brand {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+    }
+  }
+}
+.deals-weeek {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.top-selling-products {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.featured-products {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.recommended {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.new-arrival {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.top-brand {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.flash-sales {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.hot-deals {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.organic-food {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.new-arrival {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+.instagram {
+  .inner {
+    @include msm-screen {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.banner-three .slick-arrow i {
+  color: #fff !important;
+}
+
+.banner-three {
+  .slick-arrow {
+    z-index: 9999;
+  }
+}
+
+.product-details__thumb-slider {
+  @include msm-screen {
+    min-width: auto;
+  }
+}
+
+.search-form__input {
+  @include msm-screen {
+    width: 100%;
+  }
+}
+
+.vendors-list {
+  .show {
+    @include msm-screen {
+      width: 100%;
+    }
+  }
+  .sort {
+    @include msm-screen {
+      display: grid;
+      width: 100%;
+    }
+  }
+  .search-form__wrapper {
+    @include msm-screen {
+      width: 100%;
+    }
+  }
 }

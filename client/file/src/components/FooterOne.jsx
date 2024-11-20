@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FooterOne = () => {
   return (
-    <footer className='footer py-120'>
+    <footer className='footer py-80'>
       <img
         src='assets/images/bg/body-bottom-bg.png'
         alt='BG'

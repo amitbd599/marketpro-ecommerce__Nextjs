@@ -1,44 +1,19 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 
 const FeatureOne = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
+  const sliderRef = useRef(null);
 
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 10,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1699,
@@ -96,6 +71,7 @@ const FeatureOne = () => {
         <div className='position-relative arrow-center'>
           <div className='flex-align'>
             <button
+              onClick={() => sliderRef.current.slickPrev()}
               type='button'
               id='feature-item-wrapper-prev'
               className='slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
@@ -103,6 +79,7 @@ const FeatureOne = () => {
               <i className='ph ph-caret-left' />
             </button>
             <button
+              onClick={() => sliderRef.current.slickNext()}
               type='button'
               id='feature-item-wrapper-next'
               className='slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1'
@@ -110,8 +87,9 @@ const FeatureOne = () => {
               <i className='ph ph-caret-right' />
             </button>
           </div>
+
           <div className='feature-item-wrapper'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb rounded-circle'>
                   <Link href='/shop' className='w-100 h-100 flex-center'>

@@ -1,47 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const TopVendorsTwo = () => {
-  function SampleNextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={` ${className} slick-next slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-end-0`}
-      >
-        <i className='ph ph-caret-right' />
-      </button>
-    );
-  }
-  function SamplePrevArrow(props) {
-    const { className, onClick } = props;
-
-    return (
-      <button
-        type='button'
-        onClick={onClick}
-        className={`${className} slick-prev slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-start-0`}
-      >
-        <i className='ph ph-caret-left' />
-      </button>
-    );
-  }
+  const sliderRef_1 = useRef(null);
+  const sliderRef_2 = useRef(null);
+  const sliderRef_3 = useRef(null);
+  const sliderRef_4 = useRef(null);
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
   };
   return (
     <section className='top-vendor py-80'>
@@ -70,6 +47,7 @@ const TopVendorsTwo = () => {
                     className='vendor-card__logo m-12'
                   />
                   <h6 className='title mt-32 text-lg'>Organic Market</h6>
+
                   <div className='flex-align gap-6 justify-content-center'>
                     <span className='text-lg fw-medium text-warning-600 d-flex'>
                       <i className='ph-fill ph-star' />
@@ -82,7 +60,25 @@ const TopVendorsTwo = () => {
                 </div>
                 <div className='position-relative slick-arrows-style-three'>
                   <div className='vendor-card__list style-two mt-22'>
-                    <Slider {...settings}>
+                    <div className=' slick-arrows-style-three'>
+                      <button
+                        onClick={() => sliderRef_1.current.slickPrev()}
+                        type='button'
+                        id='vendor-prev'
+                        className='slick-prev slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-start-0'
+                      >
+                        <i className='ph ph-caret-left' />
+                      </button>
+                      <button
+                        onClick={() => sliderRef_1.current.slickNext()}
+                        type='button'
+                        id='vendor-next'
+                        className='slick-next slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-end-0'
+                      >
+                        <i className='ph ph-caret-right' />
+                      </button>
+                    </div>
+                    <Slider ref={sliderRef_1} {...settings}>
                       <div className=''>
                         <div className='vendor-card__item bg-white rounded-circle flex-center'>
                           <img
@@ -157,7 +153,26 @@ const TopVendorsTwo = () => {
                 </div>
                 <div className='position-relative slick-arrows-style-three'>
                   <div className='vendor-card__list style-two mt-22'>
-                    <Slider {...settings}>
+                    <div className=' slick-arrows-style-three'>
+                      <button
+                        onClick={() => sliderRef_2.current.slickPrev()}
+                        type='button'
+                        id='vendor-prev'
+                        className='slick-prev slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-start-0'
+                      >
+                        <i className='ph ph-caret-left' />
+                      </button>
+                      <button
+                        onClick={() => sliderRef_2.current.slickNext()}
+                        type='button'
+                        id='vendor-next'
+                        className='slick-next slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-end-0'
+                      >
+                        <i className='ph ph-caret-right' />
+                      </button>
+                    </div>
+
+                    <Slider ref={sliderRef_2} {...settings}>
                       <div className=''>
                         <div className='vendor-card__item bg-white rounded-circle flex-center'>
                           <img
@@ -232,7 +247,25 @@ const TopVendorsTwo = () => {
                 </div>
                 <div className='position-relative slick-arrows-style-three'>
                   <div className='vendor-card__list style-two mt-22'>
-                    <Slider {...settings}>
+                    <div className=' slick-arrows-style-three'>
+                      <button
+                        onClick={() => sliderRef_3.current.slickPrev()}
+                        type='button'
+                        id='vendor-prev'
+                        className='slick-prev slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-start-0'
+                      >
+                        <i className='ph ph-caret-left' />
+                      </button>
+                      <button
+                        onClick={() => sliderRef_3.current.slickNext()}
+                        type='button'
+                        id='vendor-next'
+                        className='slick-next slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-end-0'
+                      >
+                        <i className='ph ph-caret-right' />
+                      </button>
+                    </div>
+                    <Slider ref={sliderRef_3} {...settings}>
                       <div className=''>
                         <div className='vendor-card__item bg-white rounded-circle flex-center'>
                           <img
@@ -307,7 +340,25 @@ const TopVendorsTwo = () => {
                 </div>
                 <div className='position-relative slick-arrows-style-three'>
                   <div className='vendor-card__list style-two mt-22'>
-                    <Slider {...settings}>
+                    <div className=' slick-arrows-style-three'>
+                      <button
+                        onClick={() => sliderRef_4.current.slickPrev()}
+                        type='button'
+                        id='vendor-prev'
+                        className='slick-prev slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-start-0'
+                      >
+                        <i className='ph ph-caret-left' />
+                      </button>
+                      <button
+                        onClick={() => sliderRef_4.current.slickNext()}
+                        type='button'
+                        id='vendor-next'
+                        className='slick-next slick-arrow position-absolute top-50 translate-middle-y flex-center rounded-circle bg-neutral-600 hover-bg-main-two-600 w-24 h-24 text-white text-sm z-1 transition-1 inset-inline-end-0'
+                      >
+                        <i className='ph ph-caret-right' />
+                      </button>
+                    </div>
+                    <Slider ref={sliderRef_4} {...settings}>
                       <div className=''>
                         <div className='vendor-card__item bg-white rounded-circle flex-center'>
                           <img

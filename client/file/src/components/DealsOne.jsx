@@ -1,36 +1,11 @@
 "use client";
 
-import React, { memo, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 
-const SampleNextArrow = memo(function SampleNextArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <button
-      type='button'
-      onClick={onClick}
-      className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-    >
-      <i className='ph ph-caret-right' />
-    </button>
-  );
-});
-
-const SamplePrevArrow = memo(function SamplePrevArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <button
-      type='button'
-      onClick={onClick}
-      className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-    >
-      <i className='ph ph-caret-left' />
-    </button>
-  );
-});
-
 const DealsOne = () => {
+  const sliderRef = useRef(null);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -53,15 +28,13 @@ const DealsOne = () => {
 
   const settings = {
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1599,
@@ -85,6 +58,7 @@ const DealsOne = () => {
         breakpoint: 575,
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
@@ -96,13 +70,31 @@ const DealsOne = () => {
           <div className='section-heading mb-24'>
             <div className='flex-between flex-wrap gap-8'>
               <h5 className='mb-0'>Deal of The Week</h5>
-              <div className='flex-align mr-point gap-16'>
+              <div className='inner flex-align  gap-16'>
                 <Link
                   href='/shop'
                   className='text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline'
                 >
                   View All Deals
                 </Link>
+                <div className='flex-align gap-8'>
+                  <button
+                    onClick={() => sliderRef.current.slickPrev()}
+                    type='button'
+                    id='deal-week-prev'
+                    className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-left' />
+                  </button>
+                  <button
+                    onClick={() => sliderRef.current.slickNext()}
+                    type='button'
+                    id='deal-week-next'
+                    className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1'
+                  >
+                    <i className='ph ph-caret-right' />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -145,7 +137,7 @@ const DealsOne = () => {
             </div>
           </div>
           <div className='deals-week-slider arrow-style-two'>
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
               <div>
                 <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <Link

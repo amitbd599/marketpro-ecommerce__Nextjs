@@ -36,7 +36,7 @@ const BestSellsOne = () => {
             <div className='row gy-4'>
               <div className='col-md-6'>
                 <div className='product-card style-two h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 flex-align gap-16'>
-                  <div className=''>
+                  <div className='w-100'>
                     <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                       Sale 50%{" "}
                     </span>
@@ -130,7 +130,7 @@ const BestSellsOne = () => {
               </div>
               <div className='col-md-6'>
                 <div className='product-card style-two h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 flex-align gap-16'>
-                  <div className=''>
+                  <div className='w-100'>
                     <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                       Sale 50%{" "}
                     </span>
@@ -224,7 +224,7 @@ const BestSellsOne = () => {
               </div>
               <div className='col-md-6'>
                 <div className='product-card style-two h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 flex-align gap-16'>
-                  <div className=''>
+                  <div className='w-100'>
                     <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                       Sale 50%{" "}
                     </span>
@@ -318,7 +318,7 @@ const BestSellsOne = () => {
               </div>
               <div className='col-md-6'>
                 <div className='product-card style-two h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2 flex-align gap-16'>
-                  <div className=''>
+                  <div className='w-100'>
                     <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                       Sale 50%{" "}
                     </span>
@@ -414,7 +414,7 @@ const BestSellsOne = () => {
           </div>
           <div className='col-xxl-4'>
             <div className='position-relative rounded-16 bg-light-purple overflow-hidden p-28 z-1 text-center'>
-              <div className=''>
+              <div className='w-100'>
                 <img
                   src='assets/images/bg/special-snacks.png'
                   alt='marketpro'
